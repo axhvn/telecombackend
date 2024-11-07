@@ -12,3 +12,6 @@ def blog(request: HttpRequest):
 
 def blog_details(request: HttpRequest):
   return render(request, 'blog-details.html')
+
+def portfolio_details(request: HttpRequest):
+  return render(request, 'portfolio-details.html')
