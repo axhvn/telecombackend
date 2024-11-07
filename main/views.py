@@ -6,3 +6,9 @@ def home(request: HttpRequest):
   if not request.user.is_authenticated:
     return render(request, 'index.html')
   return HttpResponse("you're not logged in")
+
+def blog(request: HttpRequest):
+  return render(request, 'blog.html')
+
+def blog_details(request: HttpRequest):
+  return render(request, 'blog-details.html')
