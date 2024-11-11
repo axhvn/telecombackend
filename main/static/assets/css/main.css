@@ -1054,12 +1054,12 @@ section {
   position: absolute;
   inset: 0;
   z-index: 2;
-} 
+}
 
 .stats2 .container {
   position: relative;
   z-index: 3;
-}
+} 
 
 .stats2 .stats-item {
   padding: 30px;
