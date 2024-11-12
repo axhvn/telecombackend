@@ -2917,3 +2917,8 @@ section {
       width: 50px;
   }
 }
+
+/* .text-blue-gr {
+  color: rgb(77,246,252);
+  color: linear-gradient(90deg, rgba(77,246,252,1) 0%, rgba(13,32,121,1) 100%);
+} */
