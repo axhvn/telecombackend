@@ -250,7 +250,7 @@ section {
 
 /* Home Page Custom Header
 ------------------------------*/
-.index-page .header {
+.home-page .header {
   --color-background: rgba(255, 255, 255, 0);
   --color-secondary: #ffffff;
   --color-nav: rgba(255, 255, 255, 0.515);
@@ -259,7 +259,7 @@ section {
 
 /* Home Page Custom Header on page scroll
 ------------------------------*/
-.index-page.scrolled .header {
+.home-page.scrolled .header {
   --color-background: #ffffff;
   --color-secondary: #444444;
   --color-nav: #444444;

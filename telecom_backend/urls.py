@@ -24,4 +24,5 @@ urlpatterns = [
     path("blog/", blog, name="blog"),
     path("blog-details/", blog_details, name="blog-details"),
     path("portfolio-details/", blog_details, name="portfolio-details"),
+    path("home/", home, name="home"),
 ]
