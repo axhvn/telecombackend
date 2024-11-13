@@ -40,19 +40,19 @@
       <a href="{% url 'home' %}" class="logo d-flex align-items-center me-auto me-xl-0">
         <!-- Uncomment the line below if you also wish to use an image logo -->
         <!-- <img src="assets/img/logo.png" alt=""> -->
-        <h1>Append</h1>
-        <span>.</span>
+        <h1>Telecom</h1>
+        <!-- <span>.</span> -->
       </a>
 
       <!-- Nav Menu -->
       <nav id="navmenu" class="navmenu">
         <ul>
           <li><a href="{% url 'home' %}">Home</a></li>
-          <li><a href="home.html#about">About</a></li>
-          <li><a href="home.html#services">Services</a></li>
-          <li><a href="home.html#portfolio">Portfolio</a></li>
-          <li><a href="home.html#team">Team</a></li>
-          <li><a href="blog.html" class="active">Blog</a></li>
+          <li><a href="{% url 'home' %}#about">About</a></li>
+          <li><a href="{% url 'home' %}#services">Services</a></li>
+          <li><a href="{% url 'home' %}#portfolio">Portfolio</a></li>
+          <li><a href="{% url 'home' %}#team">Team</a></li>
+          <li><a href="{% url 'blog' %}" class="active">Blog</a></li>
           <li class="dropdown has-dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down"></i></a>
             <ul class="dd-box-shadow">
               <li><a href="#">Dropdown 1</a></li>
@@ -70,13 +70,13 @@
               <li><a href="#">Dropdown 4</a></li>
             </ul>
           </li>
-          <li><a href="home.html#contact">Contact</a></li>
+          <li><a href="{% url 'home' %}#contact">Contact</a></li>
         </ul>
 
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav><!-- End Nav Menu -->
 
-      <a class="btn-getstarted" href="home.html#about">Get Started</a>
+      <a class="btn-getstarted" href="{% url 'home' %}#about">Get Started</a>
 
     </div>
   </header><!-- End Header -->
@@ -98,7 +98,7 @@
       <nav class="breadcrumbs">
         <div class="container">
           <ol>
-            <li><a href="home.html">Home</a></li>
+            <li><a href="{% url 'home' %}">Home</a></li>
             <li class="current">Blog</li>
           </ol>
         </div>
@@ -148,7 +148,7 @@
               <p class="post-category">Sports</p>
 
               <h2 class="title">
-                <a href="blog-details.html">Nisi magni odit consequatur autem nulla dolorem</a>
+                <a href="{% url 'blog-details' %}">Nisi magni odit consequatur autem nulla dolorem</a>
               </h2>
 
               <div class="d-flex align-items-center">
@@ -174,7 +174,7 @@
               <p class="post-category">Entertainment</p>
 
               <h2 class="title">
-                <a href="blog-details.html">Possimus soluta ut id suscipit ea ut in quo quia et soluta</a>
+                <a href="{% url 'blog-details' %}">Possimus soluta ut id suscipit ea ut in quo quia et soluta</a>
               </h2>
 
               <div class="d-flex align-items-center">
@@ -200,7 +200,7 @@
               <p class="post-category">Sports</p>
 
               <h2 class="title">
-                <a href="blog-details.html">Non rem rerum nam cum quo minus olor distincti</a>
+                <a href="{% url 'blog-details' %}">Non rem rerum nam cum quo minus olor distincti</a>
               </h2>
 
               <div class="d-flex align-items-center">
@@ -226,7 +226,7 @@
               <p class="post-category">Politics</p>
 
               <h2 class="title">
-                <a href="blog-details.html">Accusamus quaerat aliquam qui debitis facilis consequatur</a>
+                <a href="{% url 'blog-details' %}">Accusamus quaerat aliquam qui debitis facilis consequatur</a>
               </h2>
 
               <div class="d-flex align-items-center">
@@ -252,7 +252,7 @@
               <p class="post-category">Entertainment</p>
 
               <h2 class="title">
-                <a href="blog-details.html">Distinctio provident quibusdam numquam aperiam aut</a>
+                <a href="{% url 'blog-details' %}">Distinctio provident quibusdam numquam aperiam aut</a>
               </h2>
 
               <div class="d-flex align-items-center">
@@ -290,7 +290,7 @@
     <div class="container footer-top">
       <div class="row gy-4">
         <div class="col-lg-5 col-md-12 footer-about">
-          <a href="home.html" class="logo d-flex align-items-center">
+          <a href="{% url 'home' %}" class="logo d-flex align-items-center">
             <span>Append</span>
           </a>
           <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta donna mare fermentum iaculis eu non diam phasellus.</p>
