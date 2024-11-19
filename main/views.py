@@ -23,7 +23,7 @@ def portfolio_details(request: HttpRequest):
 
 
 def home(request: HttpRequest):
-    news = News.objects.all()
+    news = News.objects.all().order_by("-created_at")[:3]
     return render(request, "home.html", {"news": news})
 
 
