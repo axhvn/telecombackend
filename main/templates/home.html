@@ -1026,18 +1026,18 @@
       <div class="container">
 
         <div class="row gy-4">
-
+          {% for new in news %}
           <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
             <article>
 
               <div class="post-img">
-                <img src="{% static 'assets/images/news1.webp' %}" alt="" class="img-fluid">
+                <img src="/media/{{ new.image }}" alt="" class="img-fluid">
               </div>
 
-              <p class="post-category">02.11.2024</p>
+              <p class="post-category">{{ new.created_at|date:"d.m.Y" }}</p>
 
               <h3 class="title pt-2">
-                <a href="blog-details.html">Uhnaagiýn Hurelsuh Serdar Berdimuhamedowy Mongoliýa döwlet sapary bilen çagyrdy</a>
+                <a href="news/{{ new.id }}/">{{ new.title }}</a>
               </h3>
 
               <!-- <div class="d-flex align-items-center">
@@ -1051,7 +1051,8 @@
               </div> -->
 
             </article>
-          </div><!-- End post list item -->
+          </div>
+          {% endfor %}<!-- End post list item -->
 
           <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
             <article>
@@ -1063,7 +1064,7 @@
               <p class="post-category">02.11.2024</p>
 
               <h3 class="title pt-2">
-                <a href="blog-details.html">Arkadag şäheriniň golaýyndaky aýlaw çatrygynda täsin bina gurulýar</a>
+                <a href="blog-details">Arkadag şäheriniň golaýyndaky aýlaw çatrygynda täsin bina gurulýar</a>
               </h3>
 
               <!-- <div class="d-flex align-items-center">
@@ -1089,7 +1090,7 @@
               <p class="post-category">02.11.2024</p>
 
               <h3 class="title pt-2">   
-                <a href="blog-details.html">Türkmen telekeçileri Tähranda geçiriljek halkara sergä çagyrylýar</a>
+                <a href="blog-details">Türkmen telekeçileri Tähranda geçiriljek halkara sergä çagyrylýar</a>
               </h3>
 
               <!-- <div class="d-flex align-items-center">
