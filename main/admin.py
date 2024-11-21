@@ -6,3 +6,8 @@ from .models import *
 @admin.register(News)
 class NewsAdmin(admin.ModelAdmin):
     list_display = ("title", "created_at", "updated_at")
+
+
+@admin.register(Feedback)
+class FeedbackAdmin(admin.ModelAdmin):
+    list_display = ("name", "subject", "email", "sent_in")

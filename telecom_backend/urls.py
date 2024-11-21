@@ -29,6 +29,10 @@ urlpatterns = [
     path("blog-details/", blog_details, name="blog-details"),
     path("portfolio-details/", blog_details, name="portfolio-details"),
     path("news/<int:news_id>/", news_detail),
+    path("register/", register_view, name="register_view"),
+    path("login/", login_view, name="login_view"),
+    path("contact/", contact, name="contact"),
+    path("logout/", logout_view, name="logout_view"),
     path("ckeditor5/", include("django_ckeditor_5.urls")),
 ]
 

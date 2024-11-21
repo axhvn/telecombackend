@@ -12,3 +12,14 @@ class News(models.Model):
 
     def __str__(self):
         return self.title
+
+
+class Feedback(models.Model):
+    name = models.CharField(max_length=200)
+    email = models.EmailField(max_length=200)
+    subject = models.CharField(max_length=500)
+    message = models.TextField()
+    sent_in = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        return self.name

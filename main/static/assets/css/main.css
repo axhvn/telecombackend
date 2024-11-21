@@ -175,7 +175,7 @@ section {
 }
 
 .header .logo img {
-  max-height: 40px;
+  max-height: 48px;
   margin-right: 6px;
 }
 
@@ -260,7 +260,7 @@ section {
 /* Home Page Custom Header on page scroll
 ------------------------------*/
 .home-page.scrolled .header {
-  --color-background: #ffffff;
+  --color-background: #d7d7d7;
   --color-secondary: #444444;
   --color-nav: #444444;
   --color-nav-hover: #d83535;
