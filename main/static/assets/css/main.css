@@ -251,7 +251,7 @@ section {
 /* Home Page Custom Header
 ------------------------------*/
 .home-page .header {
-  --color-background: rgba(255, 255, 255, 0);
+  --color-background: rgba(255, 104, 104, 0);
   --color-secondary: #ffffff;
   --color-nav: rgba(255, 255, 255, 0.515);
   --color-nav-hover: #ffffff;
@@ -260,10 +260,14 @@ section {
 /* Home Page Custom Header on page scroll
 ------------------------------*/
 .home-page.scrolled .header {
-  --color-background: #d7d7d7;
+  --color-background: #ffffff;
   --color-secondary: #444444;
   --color-nav: #444444;
   --color-nav-hover: #d83535;
+}
+
+.telecomlogo.scrolled {
+  fill: #df1529;
 }
 
 /*--------------------------------------------------------------
@@ -2926,7 +2930,7 @@ section {
 
 /* width */
 ::-webkit-scrollbar {
-  width: 20px;
+  width: 15px;
 }
 
 /* Track */
@@ -2944,4 +2948,5 @@ section {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #fc6666; 
+  /* background: transparent  ; */
 }
