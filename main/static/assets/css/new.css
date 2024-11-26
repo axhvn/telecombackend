@@ -1,0 +1,7 @@
+.home-page .header {
+  --color-background:#ffffff;
+  --color-secondary: #ffffff;
+  --color-nav: rgba(0, 0, 0, 0.515);
+  --color-nav-hover: #d83535;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+}

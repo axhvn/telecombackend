@@ -8,6 +8,11 @@ class NewsAdmin(admin.ModelAdmin):
     list_display = ("title", "created_at", "updated_at")
 
 
+@admin.register(Blog)
+class BlogAdmin(admin.ModelAdmin):
+    list_display = ("name", "publisher", "created_at", "updated_at")
+
+
 @admin.register(Feedback)
 class FeedbackAdmin(admin.ModelAdmin):
     list_display = ("name", "subject", "email", "sent_in")

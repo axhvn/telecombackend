@@ -102,3 +102,6 @@ def contact(request):
             name=name, email=email, subject=subject, message=message
         )
     return redirect("home")
+
+# def blog(request):
+    
