@@ -10,6 +10,7 @@
     <meta name="keywords" content="" />
     <meta name="description" content="" />
     <title></title>
+    <link href="{% static 'assets/vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
     <link rel="stylesheet" href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css' %}">
     <link rel="stylesheet" href="{% static 'assets/css/main.css' %}">
     <link rel="stylesheet" href="{% static 'assets/css/login.css' %}">
@@ -55,6 +56,9 @@
       </form>
       <div class="pt-2">
         Hasap bar? <a href="/login">Giriş</a>
+      </div>
+      <div class="pt-3">
+        <a href="{% url 'home' %}"><i class="bi bi-arrow-left"></i> Yza</a>
       </div>
     </div>
     <!-- <div class="container col-xl-10 col-md-12 text-md-center text-lg-start">
