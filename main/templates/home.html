@@ -6,6 +6,9 @@ Esasy sahypa
 {% block head %}
 <link href="{% static 'assets/css/main.css' %}" rel="stylesheet">
 {% endblock head %}
+{% block navbar_links %}
+  {% include 'anchors.html' %}
+{% endblock navbar_links %}
 {% block body %}
     <!-- Hero Section - Home Page -->
     <section id="hero" class="hero">
@@ -636,7 +639,7 @@ Esasy sahypa
                   <i class="bi bi-geo-alt"></i>
                   <h3>Salgysy</h3>
                   <p>Daşoguz, Türkmenbaşy şaýoly j. 44</p>
-                  <p>Türkmenbaşy, Türkmenbaşy şaýoly j. 6</p>
+                  <!-- <p>Türkmenbaşy, Türkmenbaşy şaýoly j. 6</p> -->
                 </div>
               </div><!-- End Info Item -->
 
@@ -677,19 +680,19 @@ Esasy sahypa
               <div class="row gy-4">
 
                 <div class="col-md-6">
-                  <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+                  <input type="text" name="name" class="form-control" placeholder="Ulanyjy ady" required>
                 </div>
 
                 <div class="col-md-6 ">
-                  <input type="email" class="form-control" name="email" placeholder="Your Email" required>
+                  <input type="email" class="form-control" name="email" placeholder="Email giriziň" required>
                 </div>
 
                 <div class="col-md-12"> 
-                  <input type="text" class="form-control" name="subject" placeholder="Subject" required>
+                  <input type="text" class="form-control" name="subject" placeholder="Tema" required>
                 </div>
 
                 <div class="col-md-12">
-                  <textarea class="form-control" name="message" rows="6" placeholder="Message" required></textarea>
+                  <textarea class="form-control" name="message" rows="6" placeholder="Masaj" required></textarea>
                 </div>
 
                 <div class="col-md-12 text-center">
@@ -698,7 +701,7 @@ Esasy sahypa
                     A simple success alert—check it out!
                   </div> -->
 
-                  <button type="submit">Send Message</button>
+                  <button type="submit">Habary ugrat</button>
                 </div>
 
               </div>

@@ -37,23 +37,18 @@
     <header id="header" class="header fixed-top d-flex align-items-center">
       <div class="container-fluid d-flex align-items-center justify-content-between">
         <a href="{% url 'home' %}"
-            class="logo d-flex align-items-center me-auto me-xl-0">
+           class="logo d-flex align-items-center me-auto me-xl-0">
           <!-- <h1>Telecom</h1> -->
-          <img class="telecomlogo ps-4" src="{% static 'assets/images/telecom.svg' %}" alt="">
+          <img class="telecomlogo ps-4"
+               src="{% static 'assets/images/telecom.svg' %}"
+               alt="">
           <!-- <span>.</span> -->
         </a>
         <!-- Nav Menu -->
         <nav id="navmenu" class="navmenu">
           <ul>
-            <li>
-              <a href="#services">Hyzmatlar</a>
-            </li>
-            <li>
-              <a href="#faq" class="button" aria-expanded="false" aria-controls="list">KSS</a>
-            </li>
-            <li>
-              <a href="#about">Biz hakda</a>
-            </li>
+            {% block navbar_links %}
+            {% endblock navbar_links %}
             <!-- <li>
               <a href="#portfolio">Portfolio</a>
             </li> -->
@@ -100,9 +95,6 @@
                 </li>
               </ul>
             </li> -->
-            <li>
-              <a href="#contact">Habarlaşyň</a>
-            </li>
           </ul>
           <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
         </nav>
@@ -174,7 +166,9 @@
             </ul>
           </div>
           <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
-            <h4><a class="text-black" href="#habar">Habarlaşmak üçin</a></h4>
+            <h4>
+              <a class="text-black" href="#habar">Habarlaşmak üçin</a>
+            </h4>
             <p>Daşoguz, Türkmenbaşy şaýoly j. 44</p>
             <p class="mt-4">
               <strong>Tel:</strong> <span><a class="text-black" href="tel:071">071</a></span>
@@ -187,15 +181,15 @@
       </div>
       <div class="container copyright text-center mt-4">
         <p>
-          <strong class="px-1">Daşoguztelekom EAK</strong> <span> © Ähli hukuklar goralan</span>
+          <strong class="px-1">Daşoguztelekom EAK</strong> <span>© Ähli hukuklar goralan</span>
         </p>
       </div>
     </footer>
     <!-- End Footer -->
     <!-- Scroll Top Button -->
     <a href="#"
-      id="scroll-top"
-      class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+       id="scroll-top"
+       class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
     <!-- Preloader -->
     <!-- Vendor JS Files -->
     <script src="{% static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
