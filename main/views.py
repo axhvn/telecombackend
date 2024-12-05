@@ -14,7 +14,8 @@ def home(request: HttpRequest):
 
 
 def blog(request: HttpRequest):
-    return render(request, "blog.html")
+    blogs = Blog.objects.all().order_by("-created_at")[:6]
+    return render(request, "blog.html", {"blogs": blogs})
 
 
 def blog_details(request: HttpRequest):
@@ -103,5 +104,5 @@ def contact(request):
         )
     return redirect("home")
 
+
 # def blog(request):
-    
