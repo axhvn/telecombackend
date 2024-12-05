@@ -1963,13 +1963,13 @@ section {
   margin-bottom: 0;
 }
 
-.contact .php-email-form {
+.contact .dd-email-form {
   background: var(--color-box-background);
   padding: 30px;
   height: 100%;
 }
 
-.contact .php-email-form .error-message {
+.contact .dd-email-form .error-message {
   display: none;
   background: #df1529;
   color: #ffffff;
@@ -1979,7 +1979,7 @@ section {
   font-weight: 600; 
 }
 
-.contact .php-email-form .sent-message {
+.contact .dd-email-form .sent-message {
   display: none;
   color: #ffffff;
   background: #059652;
@@ -1989,7 +1989,7 @@ section {
   font-weight: 600;
 }
 
-.contact .php-email-form .loading {
+.contact .dd-email-form .loading {
   display: none;
   background: var(--color-background);
   text-align: center;
@@ -1997,7 +1997,7 @@ section {
   margin-bottom: 24px;
 }
 
-.contact .php-email-form .loading:before {
+.contact .dd-email-form .loading:before {
   content: "";
   display: inline-block;
   border-radius: 50%;
@@ -2009,9 +2009,9 @@ section {
   animation: animate-loading 1s linear infinite;
 }
 
-.contact .php-email-form input[type=text],
-.contact .php-email-form input[type=email],
-.contact .php-email-form textarea {
+.contact .dd-email-form input[type=text],
+.contact .dd-email-form input[type=email],
+.contact .dd-email-form textarea {
   font-size: 14px;
   padding: 10px 15px;
   box-shadow: none;
@@ -2021,25 +2021,25 @@ section {
   border-color: rgba(var(--color-default-rgb), 0.2);
 }
 
-.contact .php-email-form input[type=text]:focus,
-.contact .php-email-form input[type=email]:focus,
-.contact .php-email-form textarea:focus {
+.contact .dd-email-form input[type=text]:focus,
+.contact .dd-email-form input[type=email]:focus,
+.contact .dd-email-form textarea:focus {
   border-color: var(--color-primary);
 }
 
-.contact .php-email-form input[type=text]::-moz-placeholder,
-.contact .php-email-form input[type=email]::-moz-placeholder,
-.contact .php-email-form textarea::-moz-placeholder {
+.contact .dd-email-form input[type=text]::-moz-placeholder,
+.contact .dd-email-form input[type=email]::-moz-placeholder,
+.contact .dd-email-form textarea::-moz-placeholder {
   color: rgba(var(--color-default-rgb), 0.3);
 }
 
-.contact .php-email-form input[type=text]::placeholder,
-.contact .php-email-form input[type=email]::placeholder,
-.contact .php-email-form textarea::placeholder {
+.contact .dd-email-form input[type=text]::placeholder,
+.contact .dd-email-form input[type=email]::placeholder,
+.contact .dd-email-form textarea::placeholder {
   color: rgba(var(--color-default-rgb), 0.3);
 }
 
-.contact .php-email-form button[type=submit] {
+.contact .dd-email-form button[type=submit] {
   background: var(--color-primary);
   color: var(--color-inverse);
   border: 0;
@@ -2048,7 +2048,7 @@ section {
   border-radius: 4px;
 }
 
-.contact .php-email-form button[type=submit]:hover {
+.contact .dd-email-form button[type=submit]:hover {
   background: rgba(var(--color-primary-rgb), 0.8);
 }
 
