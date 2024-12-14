@@ -47,7 +47,7 @@ Esasy sahypa
               <p class="post-category">{{ blog.category.name }}</p>
 
               <h2 class="title">
-                <a href="{% url 'blog-details' %}">{{ blog.name }}</a>
+                <a href="/blog-details/{{ blog.id }}/">{{ blog.name }}</a>
               </h2>
 
               <div class="d-flex align-items-center">

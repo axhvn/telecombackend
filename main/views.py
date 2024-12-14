@@ -18,8 +18,15 @@ def blog(request: HttpRequest):
     return render(request, "blog.html", {"blogs": blogs})
 
 
-def blog_details(request: HttpRequest):
-    return render(request, "blog-details.html")
+def blog_details(request: HttpRequest, blog_id: int):
+    return render(
+        request,
+        "blog-details.html",
+        {
+            "blog": Blog.objects.get(id=blog_id),
+            "blogs": Blog.objects.all().order_by("-created_at")[:6],
+        },
+    )
 
 
 def portfolio_details(request: HttpRequest):
