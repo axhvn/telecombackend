@@ -1,119 +1,114 @@
 {% extends 'main_layout.html' %}
 {% load static %}
 {% block title %}
-TelecomWiFi - Daşaguztelecom
+    TelecomWiFi - Daşaguztelecom
 {% endblock title %}
 {% block head %}
-<link href="{% static 'assets/css/main.css' %}" rel="stylesheet">
-<link href="{% static 'assets/css/new.css' %}" rel="stylesheet">
-<link href="{% static 'assets/css/wifi.css' %}" rel="stylesheet">
-<link rel="stylesheet" href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css' %}">
+    <link href="{% static 'assets/css/main.css' %}" rel="stylesheet">
+    <link href="{% static 'assets/css/new.css' %}" rel="stylesheet">
+    <link href="{% static 'assets/css/wifi.css' %}" rel="stylesheet">
+    <link rel="stylesheet"
+          href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css' %}">
 {% endblock head %}
 {% block body %}
     <div style="height: 15vh;"></div>
     <header class="bg-wgreen text-white text-center p-3">
         <h1>TelecomWiFi - Daşaguztelecom</h1>
     </header>
-
     <div class="container box-shadow">
-    <h2>Тарифы безлимитного TELECOMWIFI</h2>
-
-    <div class="table-wrapper">
-        <h3>В общественных местах Ашхабада</h3>
-        <table>
-            <thead>
-                <tr>
-                    <th>Время пользования</th>
-                    <th>Цена</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>1 час</td>
-                    <td>5 манат</td>
-                </tr>
-                <tr>
-                    <td>3 часа</td>
-                    <td>10 манат</td>
-                </tr>
-                <tr>
-                    <td>1 день</td>
-                    <td>15 манат</td>
-                </tr>
-                <tr>
-                    <td>7 дней</td>
-                    <td>50 манат</td>
-                </tr>
-                <tr>
-                    <td>1 месяц</td>
-                    <td>150 манат</td>
-                </tr>
-            </tbody>
-        </table>
+        <h2>Тарифы безлимитного TELECOMWIFI</h2>
+        <div class="table-wrapper">
+            <h3>В общественных местах Ашхабада</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Время пользования</th>
+                        <th>Цена</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1 час</td>
+                        <td>5 манат</td>
+                    </tr>
+                    <tr>
+                        <td>3 часа</td>
+                        <td>10 манат</td>
+                    </tr>
+                    <tr>
+                        <td>1 день</td>
+                        <td>15 манат</td>
+                    </tr>
+                    <tr>
+                        <td>7 дней</td>
+                        <td>50 манат</td>
+                    </tr>
+                    <tr>
+                        <td>1 месяц</td>
+                        <td>150 манат</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="table-wrapper">
+            <h3>В международном аэропорту Ашхабада</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Время пользования</th>
+                        <th>Цена</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1 час</td>
+                        <td>5 USD</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="table-wrapper">
+            <h3>Для оздоровительных курортов</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Время пользования</th>
+                        <th>Цена</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>10 дней</td>
+                        <td>30 манат</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="table-wrapper">
+            <h3>Для иностранных граждан</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Время пользования</th>
+                        <th>Цена</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1 день</td>
+                        <td>20 USD</td>
+                    </tr>
+                    <tr>
+                        <td>7 дней</td>
+                        <td>100 USD</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </div>
-
-    <div class="table-wrapper">
-        <h3>В международном аэропорту Ашхабада</h3>
-        <table>
-            <thead>
-                <tr>
-                    <th>Время пользования</th>
-                    <th>Цена</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>1 час</td>
-                    <td>5 USD</td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-
-    <div class="table-wrapper">
-        <h3>Для оздоровительных курортов</h3>
-        <table>
-            <thead>
-                <tr>
-                    <th>Время пользования</th>
-                    <th>Цена</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>10 дней</td>
-                    <td>30 манат</td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-
-    <div class="table-wrapper">
-        <h3>Для иностранных граждан</h3>
-        <table>
-            <thead>
-                <tr>
-                    <th>Время пользования</th>
-                    <th>Цена</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>1 день</td>
-                    <td>20 USD</td>
-                </tr>
-                <tr>
-                    <td>7 дней</td>
-                    <td>100 USD</td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-</div>
-<div style="height: 5vh;"></div>
-
-    {% endblock body %}
-    {% block scripts %}
+    <div style="height: 5vh;"></div>
+{% endblock body %}
+{% block scripts %}
     <script src="{% static 'assets/js/main.js' %}"></script>
-    <script src="{% static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>   
-    {% endblock scripts %}
+    <script src="{% static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+{% endblock scripts %}
