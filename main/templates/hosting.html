@@ -1,56 +1,52 @@
 {% extends 'main_layout.html' %}
 {% load static %}
 {% block title %}
-Internet Cafe - Daşaguztelecom
+    Internet Cafe - Daşaguztelecom
 {% endblock title %}
 {% block head %}
-<link href="{% static 'assets/css/main.css' %}" rel="stylesheet">
-<link href="{% static 'assets/css/new.css' %}" rel="stylesheet">
-<link href="{% static 'assets/css/hosting.css' %}" rel="stylesheet">
-<link rel="stylesheet" href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css' %}">
+    <link href="{% static 'assets/css/main.css' %}" rel="stylesheet">
+    <link href="{% static 'assets/css/new.css' %}" rel="stylesheet">
+    <link href="{% static 'assets/css/hosting.css' %}" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css' %}">
 {% endblock head %}
 {% block body %}
     <div style="height: 15vh;"></div>
     <h1 class="pt-5">Хостинг</h1>
-
     <div class="cards-container">
         <!-- Карточка 1 -->
         <a href="{% url 'hosting_virtual' %}">
-          <div class="card">
-              <div class="card-title">Виртуальный сервер</div>
-              <div class="card-content">
-                  <!-- <p>Описание виртуального сервера или другая информация.</p> -->
-                  <img src="{% static 'assets/images/hosting-virtual.png' %}" alt="">
-              </div>
-          </div>
+            <div class="card">
+                <div class="card-title">Виртуальный сервер</div>
+                <div class="card-content">
+                    <!-- <p>Описание виртуального сервера или другая информация.</p> -->
+                    <img src="{% static 'assets/images/hosting-virtual.png' %}" alt="">
+                </div>
+            </div>
         </a>
-
         <!-- Карточка 2 -->
         <a href="#">
-          <div class="card">
-              <div class="card-title">Колокейшн</div>
-              <div class="card-content">
-                  <!-- <p>Описание услуги колокейшн или другая информация.</p> -->
-                  <img src="{% static 'assets/images/Colocation.png' %}" alt="">
-              </div>
-          </div>
+            <div class="card">
+                <div class="card-title">Колокейшн</div>
+                <div class="card-content">
+                    <!-- <p>Описание услуги колокейшн или другая информация.</p> -->
+                    <img src="{% static 'assets/images/Colocation.png' %}" alt="">
+                </div>
+            </div>
         </a>
-
         <!-- Карточка 3 -->
         <a href="{% url 'hosting_physical' %}">
-          <div class="card">
-              <div class="card-title">Физический сервер</div>
-              <div class="card-content">
-                  <!-- <p>Описание физического сервера или другая информация.</p> -->
-                  <img src="{% static 'assets/images/hosting-physical2.png' %}" alt="">
-              </div>
-          </div>
+            <div class="card">
+                <div class="card-title">Физический сервер</div>
+                <div class="card-content">
+                    <!-- <p>Описание физического сервера или другая информация.</p> -->
+                    <img src="{% static 'assets/images/hosting-physical2.png' %}" alt="">
+                </div>
+            </div>
         </a>
     </div>
     <div style="height: 10vh;"></div>
-
-    {% endblock body %}
-    {% block scripts %}
+{% endblock body %}
+{% block scripts %}
     <script src="{% static 'assets/js/main.js' %}"></script>
-    <script src="{% static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>   
-    {% endblock scripts %}
+    <script src="{% static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+{% endblock scripts %}
