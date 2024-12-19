@@ -56,24 +56,24 @@ table tr:hover {
 /* Адаптивность */
 @media (max-width: 1024px) {
   table th, table td {
-      font-size: 14px; /* Уменьшенный шрифт */
+      font-size: 14px;
   }
 }
 
 @media (max-width: 768px) {
   table th, table td {
-      font-size: 12px; /* Еще меньше на узких экранах */
+      font-size: 12px;
       padding: 8px;
   }
 }
 
 @media (max-width: 480px) {
   table th, table td {
-      font-size: 10px; /* Минимальный шрифт для телефонов */
+      font-size: 10px;
       padding: 6px;
   }
 
   table th {
-      white-space: nowrap; /* Текст в заголовках не переносится */
+      white-space: nowrap;
   }
 }
