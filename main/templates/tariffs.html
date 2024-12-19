@@ -1,20 +1,20 @@
 {% extends 'main_layout.html' %}
 {% load static %}
 {% block title %}
-Internet Cafe - Daşaguztelecom
+    Internet Cafe - Daşaguztelecom
 {% endblock title %}
 {% block head %}
-<link href="{% static 'assets/css/main.css' %}" rel="stylesheet">
-<link href="{% static 'assets/css/new.css' %}" rel="stylesheet">
-<link href="{% static 'assets/css/tariffs.css' %}" rel="stylesheet">
-<link rel="stylesheet" href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css' %}">
+    <link href="{% static 'assets/css/main.css' %}" rel="stylesheet">
+    <link href="{% static 'assets/css/new.css' %}" rel="stylesheet">
+    <link href="{% static 'assets/css/tariffs.css' %}" rel="stylesheet">
+    <link rel="stylesheet"
+          href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css' %}">
 {% endblock head %}
 {% block body %}
     <div style="height: 15vh;"></div>
     <h1 class="pt-5">Тарифы интернета</h1>
     <h2>Интернет для населения</h2>
     <p style="text-align: center;">Тарифы на безлимитный интернет по городу</p>
-
     <div class="plans">
         <div class="plan">
             <h3>1 Мбит/с</h3>
@@ -33,17 +33,19 @@ Internet Cafe - Daşaguztelecom
             <p>TMT 280 / месяц</p>
         </div>
     </div>
-
     <div class="additional-services">
-        <img class="bg-wreen" src="{% static 'assets/images/sliders.svg' %}" alt="Услуги">
+        <img class="bg-wreen"
+            src="{% static 'assets/images/sliders.svg' %}"
+            alt="Услуги">
         <h2>Дополнительные услуги</h2>
         <p>Перезадание</p>
-        <p>Временное выключение сроком на три месяца: <strong>TMT 30,00</strong></p>
+        <p>
+            Временное выключение сроком на три месяца: <strong>TMT 30,00</strong>
+        </p>
     </div>
     <div style="height: 10vh;"></div>
-
-    {% endblock body %}
-    {% block scripts %}
+{% endblock body %}
+{% block scripts %}
     <script src="{% static 'assets/js/main.js' %}"></script>
-    <script src="{% static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>   
-    {% endblock scripts %}
+    <script src="{% static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+{% endblock scripts %}
