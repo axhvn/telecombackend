@@ -128,5 +128,11 @@ def hosting_virtual(request: HttpRequest):
 def hosting_physical(request: HttpRequest):
     return render(request, "hosting_physical.html")
 
+def telewideniye(request: HttpRequest):
+    return render(request, "telewideniye.html")
+
+def telephone(request: HttpRequest):
+    return render(request, "telephone.html")
+
 
 # def blog(request):

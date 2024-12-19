@@ -1,0 +1,89 @@
+{% extends 'main_layout.html' %}
+{% load static %}
+{% block title %}
+Internet Cafe - Daşaguztelecom
+{% endblock title %}
+{% block head %}
+<link href="{% static 'assets/css/main.css' %}" rel="stylesheet">
+<link href="{% static 'assets/css/new.css' %}" rel="stylesheet">
+<link href="{% static 'assets/css/telephone.css' %}" rel="stylesheet">
+<link rel="stylesheet" href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css' %}">
+{% endblock head %}
+{% block body %}
+    <div style="height: 15vh;"></div>
+    <header>
+      <h1>Telefoniýa - Bahalar</h1>
+  </header>
+  <main>
+      <div class="table-container">
+          <table>
+              <thead>
+                  <tr>
+                      <th>Ýurduň ady</th>
+                      <th>Kod</th>
+                      <th>1 minut bahasy (TMT)</th>
+                  </tr>
+              </thead>
+              <tbody>
+                  <tr>
+                      <td>Awstraliýa</td>
+                      <td>+61</td>
+                      <td>5.28</td>
+                  </tr>
+                  <tr>
+                      <td>Awstriýa</td>
+                      <td>+43</td>
+                      <td>3.44</td>
+                  </tr>
+                  <tr>
+                      <td>Azerbaýjan</td>
+                      <td>+994</td>
+                      <td>1.88</td>
+                  </tr>
+                  <tr>
+                      <td>Albaniýa</td>
+                      <td>+355</td>
+                      <td>3.44</td>
+                  </tr>
+                  <tr>
+                      <td>Angola</td>
+                      <td>+244</td>
+                      <td>6.32</td>
+                  </tr>
+                  <tr>
+                      <td>Andorra</td>
+                      <td>+376</td>
+                      <td>3.44</td>
+                  </tr>
+                  <tr>
+                      <td>Niderland Antilleri</td>
+                      <td>+599</td>
+                      <td>5.70</td>
+                  </tr>
+                  <tr>
+                      <td>Ermenistan</td>
+                      <td>+374</td>
+                      <td>1.88</td>
+                  </tr>
+                  <tr>
+                      <td>Owganystan</td>
+                      <td>+93</td>
+                      <td>2.01</td>
+                  </tr>
+                  <tr>
+                      <td>Belgiýa</td>
+                      <td>+32</td>
+                      <td>3.44</td>
+                  </tr>
+                  <!-- Остальные страны можно добавить здесь -->
+              </tbody>
+          </table>
+      </div>
+  </main>
+    <!-- <div style="height: 10vh;"></div> -->
+
+    {% endblock body %}
+    {% block scripts %}
+    <script src="{% static 'assets/js/main.js' %}"></script>
+    <script src="{% static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>   
+    {% endblock scripts %}

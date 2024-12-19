@@ -1,0 +1,67 @@
+{% extends 'main_layout.html' %}
+{% load static %}
+{% block title %}
+Internet Cafe - Daşaguztelecom
+{% endblock title %}
+{% block head %}
+<link href="{% static 'assets/css/main.css' %}" rel="stylesheet">
+<link href="{% static 'assets/css/new.css' %}" rel="stylesheet">
+<link href="{% static 'assets/css/telewideniye.css' %}" rel="stylesheet">
+<link rel="stylesheet" href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css' %}">
+{% endblock head %}
+{% block body %}
+    <div style="height: 15vh;"></div>
+    <div class="header">Telewideniýe</div>
+
+    <div class="container">
+        <div class="section">
+            <div class="plan">
+                <h2>Для физических лиц</h2>
+                <ul>
+                    <li>Абонентская плата в месяц за одну точку: 10,00 TMT</li>
+                    <li>Абонентская плата в месяц за доп. точку: 5,00 TMT</li>
+                    <li>Подключение и настройка: 50,00 TMT</li>
+                    <li>Подключение и настройка дополнительной точки: 30,00 TMT</li>
+                </ul>
+            </div>
+            <div class="plan">
+                <h2>Для юридических лиц</h2>
+                <ul>
+                    <li>Абонентская плата в месяц: 15,00 TMT</li>
+                    <li>Подключение и настройка: 328,30 TMT</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="alem-tv">Alem TV</div>
+
+        <div class="tv-section">
+            <div class="tv-plan">
+                <h3>SADA</h3>
+                <ul>
+                    <li>Цена: 10 TMT</li>
+                    <li>Топовые каналы на разную тематику в одной подписке</li>
+                    <li>Более 40 каналов</li>
+                    <li>Фильмы, познавательные, спортивные и детские телеканалы</li>
+                    <li>Круглосуточная техподдержка 24/7</li>
+                </ul>
+            </div>
+            <div class="tv-plan">
+                <h3>VIP</h3>
+                <ul>
+                    <li>Цена: 25 TMT</li>
+                    <li>Топовые каналы на разную тематику в одной подписке</li>
+                    <li>Более 240 каналов</li>
+                    <li>Фильмы, познавательные, спортивные и детские телеканалы</li>
+                    <li>Круглосуточная техподдержка 24/7</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div style="height: 10vh;"></div>
+
+    {% endblock body %}
+    {% block scripts %}
+    <script src="{% static 'assets/js/main.js' %}"></script>
+    <script src="{% static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>   
+    {% endblock scripts %}

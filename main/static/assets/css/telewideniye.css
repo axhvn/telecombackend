@@ -1,0 +1,107 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+.header {
+  text-align: center;
+  padding: 20px;
+  font-size: 2rem;
+  font-weight: 700;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.plan {
+  flex: 1 1 calc(50% - 20px);
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+}
+
+.plan h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.plan ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 20px 0;
+}
+
+.plan ul li {
+  margin-bottom: 10px;
+}
+
+.price {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #000;
+  margin-top: 10px;
+}
+
+.alem-tv {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.tv-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.tv-plan {
+  flex: 1 1 calc(50% - 20px);
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+}
+
+.tv-plan h3 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+.tv-plan ul {
+  list-style: none;
+  padding: 0;
+}
+
+.tv-plan ul li {
+  margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+  .plan, .tv-plan {
+      flex: 1 1 100%;
+  }
+}
