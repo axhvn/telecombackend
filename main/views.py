@@ -29,8 +29,8 @@ def blog_details(request: HttpRequest, blog_id: int):
     )
 
 
-def portfolio_details(request: HttpRequest):
-    return render(request, "portfolio-details.html")
+# def portfolio_details(request: HttpRequest):
+#     return render(request, "portfolio-details.html")
 
 
 def home(request: HttpRequest):
@@ -110,6 +110,9 @@ def contact(request):
             name=name, email=email, subject=subject, message=message
         )
     return redirect("home")
+
+def telecomwifi(request: HttpRequest):
+    return render(request, "telecomwifi.html")
 
 
 # def blog(request):

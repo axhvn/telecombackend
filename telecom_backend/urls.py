@@ -33,6 +33,7 @@ urlpatterns = [
     path("contact/", contact, name="contact"),
     path("logout/", logout_view, name="logout_view"),
     path("ckeditor5/", include("django_ckeditor_5.urls")),
+    path("telecomwifi/", telecomwifi, name="telecomwifi"),
 ]
 
 
