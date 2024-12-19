@@ -1,0 +1,158 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+  background-color: #fff;
+  color: #333;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.header {
+  /* background-color: #f4f4f4; */
+  padding: 20px;
+  text-align: center;
+  /* border-bottom: 1px solid #ddd; */
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #222;
+}
+
+.host-card {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  transition: transform 0.2s;
+}
+
+.host-card:hover {
+  transform: translateY(-5px);
+}
+
+.host-card h2 {
+  font-size: 1.8rem;
+  margin: 0 0 15px;
+  font-weight: bold;
+  color: #444;
+}
+
+.host-details {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.host-details span {
+  font-size: 1rem;
+  color: #555;
+}
+
+.price {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #222;
+  margin-top: 10px;
+}
+
+.additional-services {
+  margin-top: 30px;
+  padding: 15px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+.additional-services h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #333;
+}
+
+.additional-services ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.additional-services ul li {
+  padding: 5px 0;
+  font-size: 1rem;
+  color: #555;
+  border-bottom: 1px solid #eee;
+}
+
+.additional-services ul li:last-child {
+  border-bottom: none;
+}
+
+@media (max-width: 992px) {
+  .host-details {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .header h1 {
+    font-size: 2rem;
+  }
+
+  .host-card h2 {
+    font-size: 1.5rem;
+  }
+
+  .price {
+    font-size: 1.1rem;
+  }
+
+  .additional-services h3 {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 10px;
+  }
+
+  .header {
+    padding: 15px;
+  }
+
+  .header h1 {
+    font-size: 1.8rem;
+  }
+
+  .host-card {
+    padding: 15px;
+  }
+
+  .host-card h2 {
+    font-size: 1.3rem;
+  }
+
+  .price {
+    font-size: 1rem;
+  }
+
+  .additional-services {
+    padding: 10px;
+  }
+
+  .additional-services h3 {
+    font-size: 1.2rem;
+  }
+}

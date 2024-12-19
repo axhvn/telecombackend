@@ -120,5 +120,13 @@ def internet_cafe(request: HttpRequest):
 def tariffs(request: HttpRequest):
     return render(request, "tariffs.html")
 
+def hosting(request: HttpRequest):
+    return render(request, "hosting.html")
+
+def hosting_virtual(request: HttpRequest):
+    return render(request, "hosting_virtual.html")
+def hosting_physical(request: HttpRequest):
+    return render(request, "hosting_physical.html")
+
 
 # def blog(request):

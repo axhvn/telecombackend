@@ -1,0 +1,95 @@
+{% extends 'main_layout.html' %}
+{% load static %}
+{% block title %}
+Internet Cafe - Daşaguztelecom
+{% endblock title %}
+{% block head %}
+<link href="{% static 'assets/css/main.css' %}" rel="stylesheet">
+<link href="{% static 'assets/css/new.css' %}" rel="stylesheet">
+<link href="{% static 'assets/css/hosting_physical.css' %}" rel="stylesheet">
+<link rel="stylesheet" href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css' %}">
+{% endblock head %}
+{% block body %}
+    <div style="height: 15vh;"></div>
+    <div class="header">
+      <h1 class="pt-5">Server Hosting Plans</h1>
+  </div>
+  <div class="container">
+      <!-- Host Plan 1 -->
+      <div class="host-card">
+          <h2>Host 1</h2>
+          <div class="host-details">
+              <span>Prossesor Intel® Xeon® E5-2630 v3, 2.4GHz, 8 ýader, 2 шт</span>
+              <span>32 GB RAM</span>
+              <span>2x1TB SAS HDD</span>
+              <span>2x10Gb/s, 4x1Gb/s</span>
+          </div>
+          <div class="price">1 985,00 TMT/ay</div>
+      </div>
+
+      <!-- Host Plan 2 -->
+      <div class="host-card">
+          <h2>Host 2</h2>
+          <div class="host-details">
+              <span>Prossesor Intel® Xeon® Silver 4215R, 3.2GHz, 8 ýader, 2 шт</span>
+              <span>64 GB RAM</span>
+              <span>2x1.92TB NVMe</span>
+              <span>2x10Gb/s, 4x1Gb/s</span>
+          </div>
+          <div class="price">2 535,00 TMT/ay</div>
+      </div>
+
+      <!-- Host Plan 3 -->
+      <div class="host-card">
+          <h2>Host 3</h2>
+          <div class="host-details">
+              <span>Prossesor Intel® Xeon® Silver 4210R, 2.4GHz, 10 ýader, 2 шт</span>
+              <span>128 GB RAM</span>
+              <span>2x1.92TB NVMe, 2x4TB SATA HDD</span>
+              <span>2x10Gb/s, 4x1Gb/s</span>
+          </div>
+          <div class="price">3 365,00 TMT/ay</div>
+      </div>
+
+      <!-- Host Plan 4 -->
+      <div class="host-card">
+          <h2>Host 4</h2>
+          <div class="host-details">
+              <span>Prossesor Intel® Xeon® Silver 4216, 2.1GHz, 16 ýader, 2 шт</span>
+              <span>256 GB RAM</span>
+              <span>2x1.92TB NVMe, 2x4TB SATA HDD</span>
+              <span>2x10Gb/s, 4x1Gb/s</span>
+          </div>
+          <div class="price">4 885,00 TMT/ay</div>
+      </div>
+
+      <!-- Host Plan 5 -->
+      <div class="host-card">
+          <h2>Host 5</h2>
+          <div class="host-details">
+              <span>Prossesor Intel® Xeon® 2683 v4, 2.1GHz, 16 ýader, 2 шт</span>
+              <span>384 GB DDR4 RAM</span>
+              <span>10x6TB HDD SAS, 2x300GB HDD SAS</span>
+              <span>2x10Gb/s, 2x10Gb/s, 4x1Gb/s</span>
+          </div>
+          <div class="price">5 175,00 TMT/ay</div>
+      </div>
+
+      <!-- Additional Services -->
+      <div class="additional-services">
+          <h3>Goşmaça hyzmatlar</h3>
+          <ul>
+              <li>Her bir goşmaça IP adres üçin - 10,00 TMT/ay</li>
+              <li>Her bir goşmaça Ethernet porty üçin - 10,00 TMT/ay</li>
+              <li>Her bir goşmaça tizligi 10 Mbit/sek, daşky kanala, çäklendirilmedik internet üçin - 1 000,00 TMT/ay</li>
+              <li>Her bir goşmaça tizligi 100 Mbit/sek, ýurduň içinde, çäklendirilmedik internet üçin - 500,00 TMT/ay</li>
+          </ul>
+      </div>
+  </div>
+    <div style="height: 10vh;"></div>
+
+    {% endblock body %}
+    {% block scripts %}
+    <script src="{% static 'assets/js/main.js' %}"></script>
+    <script src="{% static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>   
+    {% endblock scripts %}

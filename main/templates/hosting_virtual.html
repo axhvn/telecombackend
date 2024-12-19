@@ -1,0 +1,167 @@
+{% extends 'main_layout.html' %}
+{% load static %}
+{% block title %}
+Internet Cafe - Daşaguztelecom
+{% endblock title %}
+{% block head %}
+<link href="{% static 'assets/css/main.css' %}" rel="stylesheet">
+<link href="{% static 'assets/css/new.css' %}" rel="stylesheet">
+<link href="{% static 'assets/css/hosting_virtual.css' %}" rel="stylesheet">
+<link rel="stylesheet" href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css' %}">
+{% endblock head %}
+{% block body %}
+    <div style="height: 15vh;"></div>
+    <div class="table-container">
+      <h2 class="pt-4 py-2">VDS Standart</h2>
+      <table>
+          <thead>
+              <tr>
+                  <th>Показатели</th>
+                  <th>CPU</th>
+                  <th>RAM</th>
+                  <th>SSD</th>
+                  <th>Скорость Интернет</th>
+                  <th>Цена за месяц</th>
+                  <th>Часовая оплата</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr>
+                  <td data-label="Показатели">VDS Standart S</td>
+                  <td data-label="CPU">1 Core</td>
+                  <td data-label="RAM">1 ГБ</td>
+                  <td data-label="SSD">10 ГБ</td>
+                  <td data-label="Скорость Интернет">10/100 Мбит/с</td>
+                  <td class="text-primary" data-label="Цена за месяц">122.40 TMT / мес</td>
+                  <td class="text-primary" data-label="Часовая оплата">0.17 TMT / час</td>
+              </tr>
+              <tr>
+                  <td data-label="Показатели">VDS Standart M</td>
+                  <td data-label="CPU">2 Core</td>
+                  <td data-label="RAM">2 ГБ</td>
+                  <td data-label="SSD">40 ГБ</td>
+                  <td data-label="Скорость Интернет">10/100 Мбит/с</td>
+                  <td class="text-primary" data-label="Цена за месяц">252 TMT / мес</td>
+                  <td class="text-primary" data-label="Часовая оплата">0.35 TMT / час</td>
+              </tr>
+              <tr>
+                  <td data-label="Показатели">VDS Standart L</td>
+                  <td data-label="CPU">4 Core</td>
+                  <td data-label="RAM">4 ГБ</td>
+                  <td data-label="SSD">60 ГБ</td>
+                  <td data-label="Скорость Интернет">10/100 Мбит/с</td>
+                  <td class="text-primary" data-label="Цена за месяц">403.20 TMT / мес</td>
+                  <td class="text-primary" data-label="Часовая оплата">0.56 TMT / час</td>
+              </tr>
+          </tbody>
+      </table>
+
+      <h2 class="py-2">VDS Storage</h2>
+      <table>
+          <thead>
+              <tr>
+                  <th>Показатели</th>
+                  <th>CPU</th>
+                  <th>RAM</th>
+                  <th>SSD</th>
+                  <th>Скорость Интернет</th>
+                  <th>Цена за месяц</th>
+                  <th>Часовая оплата</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr>
+                  <td data-label="Показатели">VDS Storage S</td>
+                  <td data-label="CPU">1 Core</td>
+                  <td data-label="RAM">1 ГБ</td>
+                  <td data-label="SSD">60 ГБ</td>
+                  <td data-label="Скорость Интернет">10/100 Мбит/с</td>
+                  <td class="text-primary" data-label="Цена за месяц">180 TMT / мес</td>
+                  <td class="text-primary" data-label="Часовая оплата">0.25 TMT / час</td>
+              </tr>
+              <tr>
+                  <td data-label="Показатели">VDS Storage M</td>
+                  <td data-label="CPU">2 Core</td>
+                  <td data-label="RAM">2 ГБ</td>
+                  <td data-label="SSD">120 ГБ</td>
+                  <td data-label="Скорость Интернет">10/100 Мбит/с</td>
+                  <td class="text-primary" data-label="Цена за месяц">403.20 TMT / мес</td>
+                  <td class="text-primary" data-label="Часовая оплата">0.56 TMT / час</td>
+              </tr>
+              <tr>
+                  <td data-label="Показатели">VDS Storage L</td>
+                  <td data-label="CPU">2 Core</td>
+                  <td data-label="RAM">2 ГБ</td>
+                  <td data-label="SSD">200 ГБ</td>
+                  <td data-label="Скорость Интернет">10/100 Мбит/с</td>
+                  <td class="text-primary" data-label="Цена за месяц">698.40 TMT / мес</td>
+                  <td class="text-primary" data-label="Часовая оплата">0.97 TMT / час</td>
+              </tr>
+          </tbody>
+      </table>
+
+      <h2 class="py-2">VDS Power</h2>
+      <table>
+          <thead>
+              <tr>
+                  <th>Показатели</th>
+                  <th>CPU</th>
+                  <th>RAM</th>
+                  <th>SSD</th>
+                  <th>Скорость Интернет</th>
+                  <th>Цена за месяц</th>
+                  <th>Часовая оплата</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr>
+                  <td data-label="Показатели">VDS Power S</td>
+                  <td data-label="CPU">4 Core</td>
+                  <td data-label="RAM">8 ГБ</td>
+                  <td data-label="SSD">40 ГБ</td>
+                  <td data-label="Скорость Интернет">10/100 Мбит/с</td>
+                  <td class="text-primary" data-label="Цена за месяц">496.80 TMT / мес</td>
+                  <td class="text-primary" data-label="Часовая оплата">0.69 TMT / час</td>
+              </tr>
+              <tr>
+                  <td data-label="Показатели">VDS Power M</td>
+                  <td data-label="CPU">6 Core</td>
+                  <td data-label="RAM">12 ГБ</td>
+                  <td data-label="SSD">60 ГБ</td>
+                  <td data-label="Скорость Интернет">10/100 Мбит/с</td>
+                  <td class="text-primary" data-label="Цена за месяц">698.40 TMT / мес</td>
+                  <td class="text-primary" data-label="Часовая оплата">0.97 TMT / час</td>
+              </tr>
+              <tr>
+                  <td data-label="Показатели">VDS Power L</td>
+                  <td data-label="CPU">8 Core</td>
+                  <td data-label="RAM">16 ГБ</td>
+                  <td data-label="SSD">80 ГБ</td>
+                  <td data-label="Скорость Интернет">10/100 Мбит/с</td>
+                  <td class="text-primary" data-label="Цена за месяц">900 TMT / мес</td>
+                  <td class="text-primary" data-label="Часовая оплата">1.25 TMT / час</td>
+              </tr>
+          </tbody>
+      </table>
+  </div>
+
+    <div class="container">
+      <h1 class="title pt-3">Goldanýan operasiýun ulgamlary</h1>
+      <div class="logos">
+          <div class="logo-item"><img src="{% static 'assets/images/windows-server.svg' %}" alt="Windows Server"></div>
+          <div class="logo-item"><img src="{% static 'assets/images/debian-logo.svg' %}" alt="Debian"></div>
+          <div class="logo-item"><img src="{% static 'assets/images/ubuntu-logo.svg' %}" alt="Ubuntu"></div>
+          <!-- <div class="logo-item"><img src="{% static 'assets/images/centos-logo.svg' %}" alt="CentOS"></div> -->
+          <div class="logo-item"><img src="{% static 'assets/images/rocky_linux_logo.svg' %}" alt="Rocky Linux"></div>
+          <div class="logo-item"><img src="{% static 'assets/images/Oracle_logo.png' %}" alt="Oracle Linux"></div>
+          <div class="logo-item"><img src="{% static 'assets/images/Fedora_logo_(2021).svg' %}" alt="Fedora"></div>
+          <!-- <div class="logo-item"><img src="{% static 'assets/images/Almalinux.webp' %}" alt="AlmaLinux"></div> -->
+      </div>
+  </div>
+    <div style="height: 10vh;"></div>
+
+    {% endblock body %}
+    {% block scripts %}
+    <script src="{% static 'assets/js/main.js' %}"></script>
+    <script src="{% static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>   
+    {% endblock scripts %}

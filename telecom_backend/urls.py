@@ -36,6 +36,9 @@ urlpatterns = [
     path("telecomwifi/", telecomwifi, name="telecomwifi"),
     path("internetcafe/", internet_cafe, name="internet_cafe"),
     path("tariffs/", tariffs, name="tariffs"),
+    path("hosting/", hosting, name="hosting"),
+    path("hosting_virtual/", hosting_virtual, name="hosting_virtual"),
+    path("hosting_physical/", hosting_physical, name="hosting_physical"),
 ]
 
 
