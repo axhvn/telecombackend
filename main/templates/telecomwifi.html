@@ -7,15 +7,15 @@ TelecomWiFi - Daşaguztelecom
 <link href="{% static 'assets/css/main.css' %}" rel="stylesheet">
 <link href="{% static 'assets/css/new.css' %}" rel="stylesheet">
 <link href="{% static 'assets/css/wifi.css' %}" rel="stylesheet">
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css' %}">
 {% endblock head %}
 {% block body %}
     <div style="height: 15vh;"></div>
-    <header class="bg-primary text-white text-center p-3">
-      <h1>TelecomWiFi - Daşaguztelecom</h1>
-  </header>
+    <header class="bg-wgreen text-white text-center p-3">
+        <h1>TelecomWiFi - Daşaguztelecom</h1>
+    </header>
 
-  <div class="container box-shadow">
+    <div class="container box-shadow">
     <h2>Тарифы безлимитного TELECOMWIFI</h2>
 
     <div class="table-wrapper">
@@ -110,8 +110,10 @@ TelecomWiFi - Daşaguztelecom
         </table>
     </div>
 </div>
+<div style="height: 5vh;"></div>
 
     {% endblock body %}
     {% block scripts %}
     <script src="{% static 'assets/js/main.js' %}"></script>
+    <script src="{% static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>   
     {% endblock scripts %}

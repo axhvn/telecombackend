@@ -114,5 +114,11 @@ def contact(request):
 def telecomwifi(request: HttpRequest):
     return render(request, "telecomwifi.html")
 
+def internet_cafe(request: HttpRequest):
+    return render(request, "internet_cafe.html")
+
+def tariffs(request: HttpRequest):
+    return render(request, "tariffs.html")
+
 
 # def blog(request):

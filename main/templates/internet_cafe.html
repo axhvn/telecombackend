@@ -1,0 +1,71 @@
+{% extends 'main_layout.html' %}
+{% load static %}
+{% block title %}
+Internet Cafe - Daşaguztelecom
+{% endblock title %}
+{% block head %}
+<link href="{% static 'assets/css/main.css' %}" rel="stylesheet">
+<link href="{% static 'assets/css/new.css' %}" rel="stylesheet">
+<link href="{% static 'assets/css/internetcafe.css' %}" rel="stylesheet">
+<link rel="stylesheet" href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css' %}">
+{% endblock head %}
+{% block body %}
+    <div style="height: 15vh;"></div>
+    <h1 class="pt-5 pb-4">Интернет кафе</h1>
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>№</th>
+                    <th>Отделение связи</th>
+                    <th>Адрес</th>
+                    <th>Телефон</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Отделение связи №17</td>
+                    <td>Мир 1, ул. Туркменбаши, дом 1, вход 1</td>
+                    <td>45-74-33</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Отделение связи №37</td>
+                    <td>ул. А. Ниязова</td>
+                    <td>26-01-04</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Отделение связи №46</td>
+                    <td>ул. Юнус Эмре</td>
+                    <td>46-09-22</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Офис компании сотовой связи "Алтын Асыр"</td>
+                    <td>ул. Огуз хана</td>
+                    <td>95-59-04</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Культурный центр Парахат</td>
+                    <td>ул. Махтумкули</td>
+                    <td>93-54-19</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>11 мкр. ул. Котовского</td>
+                    <td>ул. А. Ниязова 104</td>
+                    <td>43-13-65</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div style="height: 10vh;"></div>
+
+    {% endblock body %}
+    {% block scripts %}
+    <script src="{% static 'assets/js/main.js' %}"></script>
+    <script src="{% static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>   
+    {% endblock scripts %}
