@@ -133,6 +133,8 @@ def telewideniye(request: HttpRequest):
 
 def telephone(request: HttpRequest):
     return render(request, "telephone.html")
+def pocta(request: HttpRequest):
+    return render(request, "pocta.html")
 
 
 # def blog(request):

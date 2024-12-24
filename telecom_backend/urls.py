@@ -41,6 +41,7 @@ urlpatterns = [
     path("hosting_physical/", hosting_physical, name="hosting_physical"),
     path("telewideniye/", telewideniye, name="telewideniye"),
     path("telephone/", telephone, name="telephone"),
+    path("pocta/", pocta, name="pocta"),
 ]
 
 

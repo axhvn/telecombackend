@@ -1,0 +1,60 @@
+{% extends 'main_layout.html' %}
+{% load static %}
+{% block title %}
+    Internet nyrhnamalary - Daşoguztelecom
+{% endblock title %}
+{% block form %}
+  {% include 'form.html' %}
+{% endblock form %}
+{% block head %}
+    <link href="{% static 'assets/css/main.css' %}" rel="stylesheet">
+    <link href="{% static 'assets/css/new.css' %}" rel="stylesheet">
+    <link href="{% static 'assets/css/pocta.css' %}" rel="stylesheet">
+    <link rel="stylesheet"
+          href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css' %}">
+{% endblock head %}
+{% block body %}
+    <div style="height: 15vh;"></div>
+    <div class="container">
+      <h2>Korporatiw elektron poçta gutusyny açyp bermek we oňa hyzmat etmek</h2>
+      <div class="pricing-section">
+          <div class="card">
+              <h4>Býujet edara-kärhanalar üçin</h4>
+              <p>Korporatiw elektron poçta gutusyny açyp bermek: GBSS-syz, 8.70 manat</p>
+              <p>Korporatiw elektron poçta hyzmat etmek: GBSS-ly, 10.00 manat</p>
+          </div>
+          <div class="card red">
+              <h4>Eýeçiligiň beýleki görnüşleri üçin</h4>
+              <p>Korporatiw elektron poçta gutusyny açyp bermek: GBSS-syz, 8.70 manat</p>
+              <p>Korporatiw elektron poçta hyzmat etmek: GBSS-ly, 30.00 manat</p>
+          </div>
+      </div>
+
+      <div class="software-section">
+          <h2>Kompyuteriňizde e-poçta programmalaryny gurmak</h2>
+          <div class="software-grid">
+              <div class="software-item">
+                <img src="{% static 'assets/images/Outlook-Logo.png' %}" alt="">
+                  <p>Microsoft Outlook</p>
+              </div>
+              <div class="software-item">
+                <img src="{% static 'assets/images/mozilla.png' %}" alt="">
+                  <p>Mozilla Thunderbird</p>
+              </div>
+              <div class="software-item">
+                <img src="{% static 'assets/images/the-bat.png' %}" alt="">
+                  <p>The Bat!</p>
+              </div>
+              <div class="software-item">
+                <img src="{% static 'assets/images/opera-Mail.png' %}" alt="">
+                  <p>Opera Mail</p>
+              </div>
+          </div>
+      </div>
+
+    <div style="height: 10vh;"></div>
+{% endblock body %}
+{% block scripts %}
+    <script src="{% static 'assets/js/main.js' %}"></script>
+    <script src="{% static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+{% endblock scripts %}
