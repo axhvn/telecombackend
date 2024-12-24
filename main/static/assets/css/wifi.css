@@ -16,7 +16,7 @@ body {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 .bg-wgreen {
-  background-color: rgb(54, 212, 2);
+  background-color: #269EEE;
 }
 
 h2 {
@@ -38,7 +38,7 @@ th, td {
   text-align: left;
 }
 th {
-  background-color: rgb(54, 212, 2);
+  background-color: #269EEE;
   color: #fff;
   font-weight: bold;
 }

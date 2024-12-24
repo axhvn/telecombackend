@@ -1,7 +1,7 @@
 {% extends 'main_layout.html' %}
 {% load static %}
 {% block title %}
-    Internet Cafe - Daşaguztelecom
+    Hosting - Daşoguztelekom
 {% endblock title %}
 {% block head %}
     <link href="{% static 'assets/css/main.css' %}" rel="stylesheet">
@@ -11,34 +11,34 @@
 {% endblock head %}
 {% block body %}
     <div style="height: 15vh;"></div>
-    <h1 class="pt-5">Хостинг</h1>
+    <h1 class="pt-5">Hosting</h1>
     <div class="cards-container">
-        <!-- Карточка 1 -->
+        <!-- Kart 1 -->
         <a href="{% url 'hosting_virtual' %}">
             <div class="card">
-                <div class="card-title">Виртуальный сервер</div>
+                <div class="card-title">Wirtual Serwer</div>
                 <div class="card-content">
-                    <!-- <p>Описание виртуального сервера или другая информация.</p> -->
+                    <!-- <p>Wirtual serwer barada düşündiriş ýa-da başga maglumatyňyz.</p> -->
                     <img src="{% static 'assets/images/hosting-virtual.png' %}" alt="">
                 </div>
             </div>
         </a>
-        <!-- Карточка 2 -->
+        <!-- Kart 2 -->
         <a href="#">
             <div class="card">
-                <div class="card-title">Колокейшн</div>
+                <div class="card-title">Kolokeýşn</div>
                 <div class="card-content">
-                    <!-- <p>Описание услуги колокейшн или другая информация.</p> -->
+                    <!-- <p>Kolokeýşn hyzmaty barada düşündiriş ýa-da başga maglumatyňyz.</p> -->
                     <img src="{% static 'assets/images/Colocation.png' %}" alt="">
                 </div>
             </div>
         </a>
-        <!-- Карточка 3 -->
+        <!-- Kart 3 -->
         <a href="{% url 'hosting_physical' %}">
             <div class="card">
-                <div class="card-title">Физический сервер</div>
+                <div class="card-title">Fiziki Serwer</div>
                 <div class="card-content">
-                    <!-- <p>Описание физического сервера или другая информация.</p> -->
+                    <!-- <p>Fiziki serwer barada düşündiriş ýa-da başga maglumatyňyz.</p> -->
                     <img src="{% static 'assets/images/hosting-physical2.png' %}" alt="">
                 </div>
             </div>
