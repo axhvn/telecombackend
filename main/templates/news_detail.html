@@ -1,0 +1,27 @@
+{% extends 'main_layout.html' %}
+{% load static %}
+{% block title %}
+  Täzelikler
+{% endblock title %}
+{% block head %}
+  <link href="{% static 'assets/css/main.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/css/new.css' %}" rel="stylesheet">
+{% endblock head %}
+{% block body %}
+  <div style="height: 20vh;"></div>
+  <div class="container col-xl-10 col-md-12 text-md-center text-lg-start">
+    <h2 class="fw-normal pb-3">{{ new.title }}</h2>
+    <div>
+      <img style="border-radius: 10px"
+        src="/media/{{ new.image }}"
+        alt=""
+        width="100%"
+        height="auto" />
+    </div>
+    <div class="text-secondary py-1">{{ new.created_at|date:"d.m.Y" }}</div>
+    <div>{{ new.content|safe }}</div>
+  </div>
+{% endblock body %}
+{% block scripts %}
+  <script src="{% static 'assets/js/main.js' %}"></script>
+{% endblock scripts %}

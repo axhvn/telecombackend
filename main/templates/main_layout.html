@@ -1,0 +1,209 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>
+      {% block title %}
+      {% endblock title %}
+    | "Daşoguztelecom" EAK</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+    <meta content="" name="author">
+    <!-- Favicons -->
+    <link href="{% static 'assets/images/dt-logo.svg' %}" rel="icon">
+    <link href="{% static 'assets/img/apple-touch-icon.png' %}"
+          rel="apple-touch-icon">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+          rel="stylesheet">
+    <link href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css' %}"
+          rel="stylesheet">
+    <link href="{% static 'assets/vendor/bootstrap-icons/bootstrap-icons.css' %}"
+          rel="stylesheet">
+    <link href="{% static 'assets/vendor/glightbox/css/glightbox.min.css' %}"
+          rel="stylesheet">
+    <link href="{% static 'assets/vendor/swiper/swiper-bundle.min.css' %}"
+          rel="stylesheet">
+    <link href="{% static 'assets/vendor/aos/aos.css' %}" rel="stylesheet">
+    {% block head %}
+    {% endblock head %}
+  </head>
+  <body class="home-page">
+    <!-- ======= Header ======= -->
+    <header id="header" class="header fixed-top d-flex align-items-center">
+      <div class="container-fluid d-flex align-items-center justify-content-between">
+        <a href="{% url 'home' %}"
+          class="logo d-flex align-items-center me-auto me-xl-0">
+          <!-- <h1>Telecom</h1> -->
+          <img class="telecomlogo ps-4"
+              src="{% static 'assets/images/dtt-logo.png' %}"
+              alt="" width="" height="">
+          <!-- <span>.</span> -->
+        </a>
+        <!-- Nav Menu -->
+        <nav id="navmenu" class="navmenu">
+          <ul>
+            {% block navbar_links %}
+            {% endblock navbar_links %}
+            <!-- <li>
+              <a href="#portfolio">Portfolio</a>
+            </li> -->
+            <!-- <li>
+              <a href="#team">Team</a>
+            </li> -->
+            <li>
+              <a href="{% url 'blog' %}">Täzelikler</a>
+            </li>
+            <!-- <li class="dropdown has-dropdown">
+              <a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down"></i></a>
+              <ul class="dd-box-shadow">
+                <li>
+                  <a href="#">Dropdown 1</a>
+                </li>
+                <li class="dropdown has-dropdown">
+                  <a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down"></i></a>
+                  <ul class="dd-box-shadow">
+                    <li>
+                      <a href="#">Deep Dropdown 1</a>
+                    </li>
+                    <li>
+                      <a href="#">Deep Dropdown 2</a>
+                    </li>
+                    <li>
+                      <a href="#">Deep Dropdown 3</a>
+                    </li>
+                    <li>
+                      <a href="#">Deep Dropdown 4</a>
+                    </li>
+                    <li>
+                      <a href="#">Deep Dropdown 5</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">Dropdown 2</a>
+                </li>
+                <li>
+                  <a href="#">Dropdown 3</a>
+                </li>
+                <li>
+                  <a href="#">Dropdown 4</a>
+                </li>
+              </ul>
+            </li> -->
+          </ul>
+          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        </nav>
+        <!-- End Nav Menu -->
+        <a class="btn-getstarted" href="{% url 'login_view' %}">
+          <i class="bi bi-person pe-1"></i>
+          Şahsy otag
+        </a>
+      </div>
+    </header>
+    <!-- End Header -->
+    <main id="main">
+      {% block body %}
+      {% endblock body %}
+    </main>
+    {% block form %}
+      {% endblock form %}
+    <!-- ======= Footer ======= -->
+    <footer id="footer" class="footer">
+      <div class="container footer-top">
+        <div class="row gy-4">
+          <div class="col-lg-5 col-md-12 footer-about">
+            <a href="{% url 'home' %}" class="logo d-flex align-items-center">
+              <span>Daşoguztelekom EAK</span>
+            </a>
+            <p>
+              Biz, ýokary hilli aragatnaşyk hyzmatlaryny üpjün edýän ygtybarly kompaniýa bolup, müşderilerimize innowasion çözümler bilen hyzmat edýäris. Siziň biziň bilen habarlaşmagyňyz örän möhümdir.
+            </p>
+            <div class="social-links d-flex mt-4">
+              <a href=""><i class="bi bi-twitter"></i></a>
+              <a href=""><i class="bi bi-facebook"></i></a>
+              <a href=""><i class="bi bi-instagram"></i></a>
+              <a href=""><i class="bi bi-linkedin"></i></a>
+            </div>
+          </div>
+          <div class="col-lg-2 col-6 footer-links">
+            <h4>DAŞOGUZTELEKOM</h4>
+            <ul>
+              <li>
+                <a href="{% url 'home' %}">Baş sahypa</a>
+              </li>
+              <li>
+                <a href="#about">Biz barada</a>
+              </li>
+              <li>
+                <a href="#services">Hyzmatymyz</a>
+              </li>
+              <li>
+                <a href="#recent-posts">Täzelikler</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-2 col-6 footer-links">
+            <h4>Hyzmatlar</h4>
+            <ul>
+              <li>
+                <a href="{% url 'tariffs' %}">Internet nyrhnamalary</a>
+              </li>
+              <li>
+                <a href="{% url 'telecomwifi' %}">TELECOMWIFI</a>
+              </li>
+              <li>
+                <a href="{% url 'hosting' %}">Hosting</a>
+              </li>
+              <li>
+                <a href="{% url 'internet_cafe' %}">Internet kafe</a>
+              </li>
+              <li>
+                <a href="{% url 'telephone' %}">Telefoniýa</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+            <h4>
+              <a class="text-black" href="#habar">Habarlaşmak üçin</a>
+            </h4>
+            <p>Daşoguz, Türkmenbaşy şaýoly j. 44</p>
+            <p class="mt-4">
+              <strong>Tel:</strong> <span><a class="text-black" href="tel:071">071</a></span>
+            </p>
+            <p>
+              <strong>Email:</strong> <span><a class="text-black" href="mailto:info@telecom.tm">info@telecom.tm</a></span>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="container copyright text-center mt-4">
+        <p>
+          <strong class="px-1">Daşoguztelekom EAK</strong> <span>© Ähli hukuklar goralan</span>
+        </p>
+      </div>
+    </footer>
+    <!-- End Footer -->
+    <!-- Scroll Top Button -->
+    <a href="#"
+      id="scroll-top"
+      class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+    <!-- Preloader -->
+    <!-- Vendor JS Files -->
+    <script src="{% static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+    <script src="{% static 'assets/vendor/glightbox/js/glightbox.min.js' %}"></script>
+    <script src="{% static 'assets/vendor/purecounter/purecounter_vanilla.js' %}"></script>
+    <script src="{% static 'assets/vendor/isotope-layout/isotope.pkgd.min.js' %}"></script>
+    <script src="{% static 'assets/vendor/swiper/swiper-bundle.min.js' %}"></script>
+    <script src="{% static 'assets/vendor/aos/aos.js' %}"></script>
+    {% block scripts %}
+    {% endblock scripts %}
+    <!-- Main JS File -->
+  </body>
+</html>
+
+

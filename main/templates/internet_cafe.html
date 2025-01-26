@@ -1,0 +1,70 @@
+{% extends 'main_layout.html' %}
+{% load static %}
+{% block title %}
+    Internet Kafe - Daşoguztelecom
+{% endblock title %}
+{% block head %}
+    <link href="{% static 'assets/css/main.css' %}" rel="stylesheet">
+    <link href="{% static 'assets/css/new.css' %}" rel="stylesheet">
+    <link href="{% static 'assets/css/internetcafe.css' %}" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css' %}">
+{% endblock head %}
+{% block body %}
+    <div style="height: 15vh;"></div>
+    <h1 class="pt-5 pb-4">Internet kafe</h1>
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>№</th>
+                    <th>Aragatnaşyk bölümä</th>
+                    <th>Salgysy</th>
+                    <th>Telefon</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Aragatnaşyk bölümä №17</td>
+                    <td>Mähelle 1, Türkmenbaşy köçesi, 1-nji jaý, 1-nji girelge</td>
+                    <td>45-74-33</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Aragatnaşyk bölümä №37</td>
+                    <td>A. Nyýazow köçesi</td>
+                    <td>26-01-04</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Aragatnaşyk bölümä №46</td>
+                    <td>Ynus Emre köçesi</td>
+                    <td>46-09-22</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>"Altyn Asyr" ykjam aragatnaşyk kompaniýsynyň edara jaýy</td>
+                    <td>Oguz han köçesi</td>
+                    <td>95-59-04</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Parahat medeniýet merkezi</td>
+                    <td>Mahtumkuly köçesi</td>
+                    <td>93-54-19</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>11-nji mkr. Kotoşowskiý köçesi</td>
+                    <td>A. Nyýazow köçesi 104</td>
+                    <td>43-13-65</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div style="height: 10vh;"></div>
+{% endblock body %}
+{% block scripts %}
+    <script src="{% static 'assets/js/main.js' %}"></script>
+    <script src="{% static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+{% endblock scripts %}

@@ -1,0 +1,52 @@
+{% extends 'main_layout.html' %}
+{% load static %}
+{% block title %}
+    Hosting - Daşoguztelekom
+{% endblock title %}
+{% block head %}
+    <link href="{% static 'assets/css/main.css' %}" rel="stylesheet">
+    <link href="{% static 'assets/css/new.css' %}" rel="stylesheet">
+    <link href="{% static 'assets/css/hosting.css' %}" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css' %}">
+{% endblock head %}
+{% block body %}
+    <div style="height: 15vh;"></div>
+    <h1 class="pt-5">Hosting</h1>
+    <div class="cards-container">
+        <!-- Kart 1 -->
+        <a href="{% url 'hosting_virtual' %}">
+            <div class="card">
+                <div class="card-title">Wirtual Serwer</div>
+                <div class="card-content">
+                    <!-- <p>Wirtual serwer barada düşündiriş ýa-da başga maglumatyňyz.</p> -->
+                    <img src="{% static 'assets/images/hosting-virtual.png' %}" alt="">
+                </div>
+            </div>
+        </a>
+        <!-- Kart 2 -->
+        <a href="#">
+            <div class="card">
+                <div class="card-title">Kolokeýşn</div>
+                <div class="card-content">
+                    <!-- <p>Kolokeýşn hyzmaty barada düşündiriş ýa-da başga maglumatyňyz.</p> -->
+                    <img src="{% static 'assets/images/Colocation.png' %}" alt="">
+                </div>
+            </div>
+        </a>
+        <!-- Kart 3 -->
+        <a href="{% url 'hosting_physical' %}">
+            <div class="card">
+                <div class="card-title">Fiziki Serwer</div>
+                <div class="card-content">
+                    <!-- <p>Fiziki serwer barada düşündiriş ýa-da başga maglumatyňyz.</p> -->
+                    <img src="{% static 'assets/images/hosting-physical2.png' %}" alt="">
+                </div>
+            </div>
+        </a>
+    </div>
+    <div style="height: 10vh;"></div>
+{% endblock body %}
+{% block scripts %}
+    <script src="{% static 'assets/js/main.js' %}"></script>
+    <script src="{% static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+{% endblock scripts %}

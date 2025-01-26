@@ -1,0 +1,177 @@
+{% extends 'main_layout.html' %}
+{% load static %}
+{% block title %}
+    Virtual serwer - Daşaguztelecom
+{% endblock title %}
+{% block head %}
+    <link href="{% static 'assets/css/main.css' %}" rel="stylesheet">
+    <link href="{% static 'assets/css/new.css' %}" rel="stylesheet">
+    <link href="{% static 'assets/css/hosting_virtual.css' %}" rel="stylesheet">
+    <link rel="stylesheet"
+          href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css' %}">
+{% endblock head %}
+{% block body %}
+    <div style="height: 15vh;"></div>
+    <div class="table-container">
+        <h2 class="pt-4 py-2">VDS Standart</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Görkezijiler</th>
+                    <th>CPU</th>
+                    <th>RAM</th>
+                    <th>SSD</th>
+                    <th>Internet tizlik</th>
+                    <th>Aýlyk baha</th>
+                    <th>Saatlyk töleg</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td data-label="Görkezijiler">VDS Standart S</td>
+                    <td data-label="CPU">1 Core</td>
+                    <td data-label="RAM">1 GB</td>
+                    <td data-label="SSD">10 GB</td>
+                    <td data-label="Internet tizlik">10/100 Mbit/s</td>
+                    <td class="text-primary" data-label="Aýlyk baha">122.40 TMT / aý</td>
+                    <td class="text-primary" data-label="Saatlyk töleg">0.17 TMT / sagat</td>
+                </tr>
+                <tr>
+                    <td data-label="Görkezijiler">VDS Standart M</td>
+                    <td data-label="CPU">2 Core</td>
+                    <td data-label="RAM">2 GB</td>
+                    <td data-label="SSD">40 GB</td>
+                    <td data-label="Internet tizlik">10/100 Mbit/s</td>
+                    <td class="text-primary" data-label="Aýlyk baha">252 TMT / aý</td>
+                    <td class="text-primary" data-label="Saatlyk töleg">0.35 TMT / sagat</td>
+                </tr>
+                <tr>
+                    <td data-label="Görkezijiler">VDS Standart L</td>
+                    <td data-label="CPU">4 Core</td>
+                    <td data-label="RAM">4 GB</td>
+                    <td data-label="SSD">60 GB</td>
+                    <td data-label="Internet tizlik">10/100 Mbit/s</td>
+                    <td class="text-primary" data-label="Aýlyk baha">403.20 TMT / aý</td>
+                    <td class="text-primary" data-label="Saatlyk töleg">0.56 TMT / sagat</td>
+                </tr>
+            </tbody>
+        </table>
+        <h2 class="py-2">VDS Storage</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Görkezijiler</th>
+                    <th>CPU</th>
+                    <th>RAM</th>
+                    <th>SSD</th>
+                    <th>Internet tizlik</th>
+                    <th>Aýlyk baha</th>
+                    <th>Saatlyk töleg</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td data-label="Görkezijiler">VDS Storage S</td>
+                    <td data-label="CPU">1 Core</td>
+                    <td data-label="RAM">1 GB</td>
+                    <td data-label="SSD">60 GB</td>
+                    <td data-label="Internet tizlik">10/100 Mbit/s</td>
+                    <td class="text-primary" data-label="Aýlyk baha">180 TMT / aý</td>
+                    <td class="text-primary" data-label="Saatlyk töleg">0.25 TMT / sagat</td>
+                </tr>
+                <tr>
+                    <td data-label="Görkezijiler">VDS Storage M</td>
+                    <td data-label="CPU">2 Core</td>
+                    <td data-label="RAM">2 GB</td>
+                    <td data-label="SSD">120 GB</td>
+                    <td data-label="Internet tizlik">10/100 Mbit/s</td>
+                    <td class="text-primary" data-label="Aýlyk baha">403.20 TMT / aý</td>
+                    <td class="text-primary" data-label="Saatlyk töleg">0.56 TMT / sagat</td>
+                </tr>
+                <tr>
+                    <td data-label="Görkezijiler">VDS Storage L</td>
+                    <td data-label="CPU">2 Core</td>
+                    <td data-label="RAM">2 GB</td>
+                    <td data-label="SSD">200 GB</td>
+                    <td data-label="Internet tizlik">10/100 Mbit/s</td>
+                    <td class="text-primary" data-label="Aýlyk baha">698.40 TMT / aý</td>
+                    <td class="text-primary" data-label="Saatlyk töleg">0.97 TMT / sagat</td>
+                </tr>
+            </tbody>
+        </table>
+        <h2 class="py-2">VDS Power</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Görkezijiler</th>
+                    <th>CPU</th>
+                    <th>RAM</th>
+                    <th>SSD</th>
+                    <th>Internet tizlik</th>
+                    <th>Aýlyk baha</th>
+                    <th>Saatlyk töleg</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td data-label="Görkezijiler">VDS Power S</td>
+                    <td data-label="CPU">4 Core</td>
+                    <td data-label="RAM">8 GB</td>
+                    <td data-label="SSD">40 GB</td>
+                    <td data-label="Internet tizlik">10/100 Mbit/s</td>
+                    <td class="text-primary" data-label="Aýlyk baha">496.80 TMT / aý</td>
+                    <td class="text-primary" data-label="Saatlyk töleg">0.69 TMT / sagat</td>
+                </tr>
+                <tr>
+                    <td data-label="Görkezijiler">VDS Power M</td>
+                    <td data-label="CPU">6 Core</td>
+                    <td data-label="RAM">12 GB</td>
+                    <td data-label="SSD">60 GB</td>
+                    <td data-label="Internet tizlik">10/100 Mbit/s</td>
+                    <td class="text-primary" data-label="Aýlyk baha">698.40 TMT / aý</td>
+                    <td class="text-primary" data-label="Saatlyk töleg">0.97 TMT / sagat</td>
+                </tr>
+                <tr>
+                    <td data-label="Görkezijiler">VDS Power L</td>
+                    <td data-label="CPU">8 Core</td>
+                    <td data-label="RAM">16 GB</td>
+                    <td data-label="SSD">80 GB</td>
+                    <td data-label="Internet tizlik">10/100 Mbit/s</td>
+                    <td class="text-primary" data-label="Aýlyk baha">900 TMT / aý</td>
+                    <td class="text-primary" data-label="Saatlyk töleg">1.25 TMT / sagat</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="container">
+        <h1 class="title pt-3">Goldanýan operasiýun ulgamlary</h1>
+        <div class="logos">
+            <div class="logo-item">
+                <img src="{% static 'assets/images/windows-server.svg' %}"
+                     alt="Windows Server">
+            </div>
+            <div class="logo-item">
+                <img src="{% static 'assets/images/debian-logo.svg' %}" alt="Debian">
+            </div>
+            <div class="logo-item">
+                <img src="{% static 'assets/images/ubuntu-logo.svg' %}" alt="Ubuntu">
+            </div>
+            <div class="logo-item">
+                <img src="{% static 'assets/images/rocky_linux_logo.svg' %}"
+                     alt="Rocky Linux">
+            </div>
+            <div class="logo-item">
+                <img src="{% static 'assets/images/Oracle_logo.png' %}" alt="Oracle Linux">
+            </div>
+            <div class="logo-item">
+                <img src="{% static 'assets/images/Fedora_logo_(2021).svg' %}"
+                     alt="Fedora">
+            </div>
+        </div>
+    </div>
+    <div style="height: 10vh;"></div>
+{% endblock body %}
+{% block scripts %}
+    <script src="{% static 'assets/js/main.js' %}"></script>
+    <script src="{% static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+{% endblock scripts %}

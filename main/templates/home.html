@@ -1,0 +1,719 @@
+{% extends 'main_layout.html' %}
+{% load static %}
+{% block title %}
+Esasy sahypa
+{% endblock title %}
+{% block head %}
+<link href="{% static 'assets/css/main.css' %}" rel="stylesheet">
+{% endblock head %}
+{% block navbar_links %}
+  {% include 'anchors.html' %}
+{% endblock navbar_links %}
+{% block body %}
+    <!-- Hero Section - Home Page -->
+    <section id="hero" class="hero">
+
+      <img src="{% static 'assets/images/dt-telecom.png' %}" alt="" data-aos="fade-in" width="auto" height="auto">
+
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-10 col-md-12 text-sm-center text-lg-start">
+            <h2 data-aos="fade-up" data-aos-delay="100">«DAŞOGUZTELEKOM - ELEKTRIK ARAGATNAŞYK KÄRHANASY»</h2>
+            <p class="py-sm-1 py-lg-0 " data-aos="fade-up" data-aos-delay="200">Ähli hyzmatlar bizde bar!</p>
+          </div>
+          <div class="col-lg-5 col-sm-10 col-md-10">
+            <form action="#" class="sign-up-form d-flex" data-aos="fade-up" data-aos-delay="300">
+              <input type="text" class="form-control" placeholder="99312999999">
+              <input type="submit" class="btn btn-primary" value="Dowam et">
+            </form>
+          </div>
+        </div>
+      </div>
+
+    </section><!-- End Hero Section -->
+
+    <!-- Clients Section - Home Page -->
+    <section id="clients" class="clients">
+
+      <div class="container-fluid" data-aos="fade-up">
+
+        <div class="row gy-4">
+          <h2 class="fw-bold">
+            Hyzmatdaşlar
+          </h2>
+
+          <div class="col-xl-2 col-md-3 col-6 client-logo">
+            <a href="https://www.mincom.gov.tm/"><img src="{% static 'assets/images/Turkmenaragatnasyk-agentligi.png' %}" class="img-fluid" alt="" width="" height=""></a>
+          </div><!-- End Client Item -->
+
+          <div class="col-xl-2 col-md-3 col-6 client-logo">
+            <a href="https://tmcell.tm/"><img src="{% static 'assets/images/TmCell.png' %}" class="img-fluid" alt="" width="" height=""></a>
+          </div><!-- End Client Item -->
+
+          <div class="col-xl-2 col-md-3 col-6 client-logo">
+            <a href="https://post.tm/"><img src="{% static 'assets/images/Turkmenpocta.png' %}" class="img-fluid" alt="" width="" height=""></a>
+          </div><!-- End Client Item -->
+
+          <div class="col-xl-2 col-md-3 col-6 client-logo">
+            <a href="https://turkmenhemrasy.gov.tm/"><img src="{% static 'assets/images/Turkmen-Hemrasy.png' %}" class="img-fluid" alt="" width="" height=""></a>
+          </div><!-- End Client Item -->
+
+          <div class="col-xl-2 col-md-3 col-6 client-logo">
+            <a href="https://drg.gov.tm/"><img src="{% static 'assets/images/Turkmenaragatnasyk-agentliginin---.png' %}" class="img-fluid" alt="" width="" height=""></a>
+          </div><!-- End Client Item -->
+
+          <div class="col-xl-2 col-md-3 col-6 client-logo">
+            <a href="https://astu.tm/"><img src="{% static 'assets/images/Astu.png' %}" class="img-fluid" alt="" width="" height=""></a>
+          </div><!-- End Client Item -->
+
+        </div>
+
+      </div>
+
+    </section><!-- End Clients Section -->
+
+    <!-- About Section - Home Page -->
+    <section id="about" class="about">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row align-items-xl-center gy-5">
+
+          <div class="col-xl-5 content">  
+            <h3>Biz barada</h3>
+            <h2>"Daşoguztelecom – Hil we Ygtybarly Aragatnaşyk"</h2>
+            <p>"Daşoguztelecom" – Türkmenistanda ýokary hilli aragatnaşyk we internet hyzmatlaryny hödürleýän öňdebaryjy kompaniýadyr. Biziň maksadymyz – size ygtybarly we tiz aragatnaşyk bilen hyzmat etmek.</p>
+            <a href="#" class="read-more"><span>Giňişleýin</span><i class="bi bi-arrow-right"></i></a>
+          </div>
+
+          <div class="col-xl-7">
+            <div class="row gy-4 icon-boxes">
+
+              <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
+                <a href="https://e.gov.tm/">
+                  <div class="icon-box">
+                    <!-- <i class="bi bi-buildings"></i> -->
+                      <!-- <img src="{% static 'assets/images/egov.png' %}" alt="" width="60px" height="60px"> -->
+                    <h2 class="text-danger2 fw-bold">e.gov.tm</h2>
+                    <p class="text-secondary">Döwlet hyzmatlar portaly
+                      - Online töleg hyzmaty</p>
+                  </div>
+                </a>
+              </div> <!-- End Icon Box -->
+
+              <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
+                <a href="{% url 'pocta' %}">
+                  <div class="icon-box">
+                    <!-- <i class="bi bi-clipboard-pulse"></i> -->
+                    <h2 class="text-danger2 fw-bold">sanly.tm</h2>
+                    <p class="text-secondary">Domeniňizde korporatiw poçta
+                      - Korporatiw e-poçta hyzmatyna birikmek üçin ýüztutma</p>
+                  </div>
+                </a>
+              </div> <!-- End Icon Box -->
+
+              <div class="col-md-6" data-aos="fade-up" data-aos-delay="400">
+                <a href="{% url 'tariffs' %}">
+                  <div class="icon-box">
+                    <!-- <i class="bi bi-command"></i> -->
+                    <h2 class="text-danger2 fw-bold">Fiziki şahslar üçin</h3>
+                    <p class="text-secondary">Fiziki şahslar üçin internet, telefon hyzmatlary we beýleki aragatnaşyk mümkinçilikleri bilen hyzmat edýäris.</p>
+                  </div>
+                </a>
+              </div> <!-- End Icon Box -->
+
+              <div class="col-md-6" data-aos="fade-up" data-aos-delay="500">
+                <a href="{% url 'hosting_physical' %}">
+                  <div class="icon-box">
+                    <!-- <i class="bi bi-graph-up-arrow"></i> -->
+                    <h2 class="text-danger2 fw-bold">Fiziki Serwer</h2>
+                    <p class="text-secondary">Fiziki serwerlerimiz ýokary tizlik, güvenlik we 24/7 goldaw bilen ýokary hilli hyzmatlary üpjün edýär.</p>
+                  </div>
+                </a>
+              </div> <!-- End Icon Box -->
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </section><!-- End About Section -->
+
+    <!-- Call-to-action Section - Home Page -->
+    <section id="call-to-action" class="call-to-action">
+      
+      <img src="{% static 'assets/images/dt-telecom.png' %}" alt="" width="100%" height="auto">
+
+      <div class="container">
+        <div class="row justify-content-center" data-aos="zoom-in" data-aos-delay="100">
+          <div class="col-xl-11">
+            <div class="text-center">
+              <h2 class="pb-lg-4 fw-bold">"Daşoguztelekom" EAK-nyň mobil goşundysy</h2>
+              <div class="text-start">
+                <div class="col-lg-6 p-4">
+                  <h3 class="text-primary">Şahsy otag</h3>
+                  <h6 class="text-">öýüňizden çykman dürli amallary ýerine ýetirmäge mümkinçilik berýär</h6>
+                  </div>
+
+                <div class="col-lg-6 col-sm-12 p-4">
+                  <h3 class="text-primary">Döwlet hyzmatlarynyň resmi internet portaly e.gov.tm</h3>
+                  <h6>Döwlet edaralary tarapyndan hödürlenýän onlaýn hyzmatlaryndan peýdalanyň</h6>
+                </div>
+
+                <div class="col-lg-6 p-4">
+                  <h3 class="text-primary">Daşoguz radio</h3>
+                  <h6>Aýdym-saz diňläň we iň soňky habarlardan habarly boluň</h6>
+                </div>
+
+              </div>
+              <!-- <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p> -->
+              <!-- <a class="cta-btn" href="#">Call To Action</a> -->
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section><!-- End Call-to-action Section -->
+
+    <!-- Stats Section - Home Page -->
+    <section id="" class="">
+
+      <!-- <img src="{% static 'assets/images/homepage.png' %}" alt="" width="100%" height="400px" data-aos="fade-in"> -->
+
+      <div class="container position-relative" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-1"></div>
+
+          <div class="col-lg-2 col-md-6">
+            <div class="text-center">
+              <a href="https://sanly.tm/"><img src="{% static 'assets/images/mail.svg' %}" alt="" width="80px" height="80px"></a>
+              <h4 class="pt-2">Mail</h4>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-2 col-md-6">
+            <div class="text-center">
+              <a href="https://telecom.tm/tk/tv/"><img src="{% static 'assets/images/telewideniye-icon.png' %}" alt="" width="80px" height="80px"></a>
+              <h4 class="pt-2">Telewideniýe</h4>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-2 col-md-6">
+            <div class="text-center">
+              <a href="https://telecom.tm/tk/menu_hosting/"><img src="{% static 'assets/images/hosting.png' %}" alt="" width="80px" height="80px"></a>
+              <h4 class="pt-2">Hosting</h4>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-2 col-md-6">
+            <div class="text-center">
+              <a href="#faq"><img src="{% static 'assets/images/support-icon.png' %}" alt="" width="80px" height="80px"></a>
+              <h4 class="pt-2">KSS</h4>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-2 col-md-6">
+            <div class="text-center">
+              <a href="https://telecom.tm/tk/wifi/"><svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="currentColor" class="bi bi-router text-primary" viewBox="0 0 16 16">
+                <path d="M5.525 3.025a3.5 3.5 0 0 1 4.95 0 .5.5 0 1 0 .707-.707 4.5 4.5 0 0 0-6.364 0 .5.5 0 0 0 .707.707"/>
+                <path d="M6.94 4.44a1.5 1.5 0 0 1 2.12 0 .5.5 0 0 0 .708-.708 2.5 2.5 0 0 0-3.536 0 .5.5 0 0 0 .707.707ZM2.5 11a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1m4.5-.5a.5.5 0 1 0 1 0 .5.5 0 0 0-1 0m2.5.5a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1m1.5-.5a.5.5 0 1 0 1 0 .5.5 0 0 0-1 0m2 0a.5.5 0 1 0 1 0 .5.5 0 0 0-1 0"/>
+                <path d="M2.974 2.342a.5.5 0 1 0-.948.316L3.806 8H1.5A1.5 1.5 0 0 0 0 9.5v2A1.5 1.5 0 0 0 1.5 13H2a.5.5 0 0 0 .5.5h2A.5.5 0 0 0 5 13h6a.5.5 0 0 0 .5.5h2a.5.5 0 0 0 .5-.5h.5a1.5 1.5 0 0 0 1.5-1.5v-2A1.5 1.5 0 0 0 14.5 8h-2.306l1.78-5.342a.5.5 0 1 0-.948-.316L11.14 8H4.86zM14.5 9a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 1 .5-.5z"/>
+                <path d="M8.5 5.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0"/>
+              </svg></a>
+              <h4 class="pt-2">TELECOMWIFI</h4>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-1"></div>
+
+        </div>
+
+      </div>
+
+    </section><!-- End Stats Section -->
+
+    <!-- Services Section - Home Page -->
+    <section id="services" class="services">
+
+      <!--  Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Hyzmatlar</h2>
+        <p>"Daşoguztelecom" – tiz we ygtybarly internet hem-de aragatnaşyk hyzmatlary.  </p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-6 " data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item d-flex">
+              <div class="icon flex-shrink-0"><i class="bi bi-router"></i></div>
+              <div>
+                <h4 class="title"><a href="{% url 'telecomwifi' %}" class="stretched-link">TELECOMWIFI</a></h4>
+                <p class="description">Ygtybarly, ýokary tizlikli internet hyzmaty, ähli müşderiler üçin amatly we durnukly aragatnaşyk.</p>
+              </div>
+            </div>
+          </div>
+          <!-- End Service Item -->
+
+          <div class="col-lg-6 " data-aos="fade-up" data-aos-delay="200">
+            <div class="service-item d-flex">
+              <div class="icon flex-shrink-0"><i class="bi bi-card-checklist"></i></div>
+              <div>
+                <h4 class="title"><a href="{% url 'tariffs' %}" class="stretched-link">Internet nyrhnamalary</a></h4>
+                <p class="description"> Dürli internet hyzmatlary, amatly tarifler, ýokary tizlikli we durnukly aragatnaşyk çözgütleri.</p>
+              </div>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-6 " data-aos="fade-up" data-aos-delay="300">
+            <div class="service-item d-flex">
+              <div class="icon flex-shrink-0"><i class="bi bi-bar-chart"></i></div>
+              <div>
+                <h4 class="title"><a href="{% url 'hosting' %}" class="stretched-link">Hosting</a></h4>
+                <p class="description">Ylymly weeb sahypalary üçin ygtybarly we çalt hostin hizmetini hödürleýäris.</p>
+              </div>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-6 " data-aos="fade-up" data-aos-delay="400">
+            <div class="service-item d-flex">
+              <div class="icon flex-shrink-0"><i class="bi bi-tv"></i></div>
+              <div>
+                <h4 class="title"><a href="{% url 'telewideniye' %}" class="stretched-link">Telewideniýe</a></h4>
+                <p class="description">Ýokary hilli telewideniýe hyzmatlary, müşderilere durnukly we ygtybarly wideo aragatnaşyk çözgütlerini hödürleýär.</p>
+              </div>
+            </div>
+          </div><!-- End Service Item -->   
+
+          <div class="col-lg-6 " data-aos="fade-up" data-aos-delay="500">
+            <div class="service-item d-flex">
+              <div class="icon flex-shrink-0"><i class="bi bi-globe"></i></div>
+              <div>
+                <h4 class="title"><a href="{% url 'internet_cafe' %}" class="stretched-link">Internet kafe</a></h4>
+                <p class="description">Ýokary tizlikli internet we amatly ýer, onlaýn hyzmatlar üçin rahat we dostlukly atmosferada.
+
+                </p>
+              </div>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-6 " data-aos="fade-up" data-aos-delay="600">
+            <div class="service-item d-flex">
+              <div class="icon flex-shrink-0"><i class="bi bi-telephone"></i></div>
+              <div>
+                <h4 class="title"><a href="{% url 'telephone' %}" class="stretched-link">Telefoniya</a></h4>
+                <p class="description">Durnukly we ygtybarly telefon hyzmatlary, ýokary hilli ses we wideo aragatnaşyk çözgütleri.</p>
+              </div>
+            </div>
+          </div><!-- End Service Item -->
+
+        </div>
+
+      </div>
+
+    </section><!-- End Services Section -->
+
+<!--  -->
+
+    <!-- Faq Section - Home Page -->
+    <section id="faq" class="faq">
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="content px-xl-5">
+              <h3><span>Köp soralýan </span><strong>soraglar</strong></h3>
+              <p>
+                Daşoguztelekom-a degişli soraglaryňyza jogaplar
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-8" data-aos="fade-up" data-aos-delay="200">
+
+            <div class="pb-3">
+              <h3>Iň köp soralýan üç sorag</h3>
+            </div>
+
+            <div class="faq-container">
+              <div class="faq-item faq-active">
+                <h3><span class="num">1.</span> <span>Hosting hyzmatyny nädip birikdirmeli?</span></h3>
+                <div class="faq-content">
+                  <p>Hosting hyzmatyny almak üçin Oguz Han köçesiniň 217-nji jaýynda ýerleşýän "Altyn Asyr" öýjükli operatoryň binasyndaky bölümimize ýüz tutmaly. Aşakda bu hyzmaty açmak / almak üçin zerur resminamalaryň sanawy görkezilýär: Ýuridik şahslar üçin: 1) ýüz tutma haty; 2) “Müşderi” tarapyndan bellenen administratoryň pasport nusgasy we şahsy maglumaty; 3) “Müşderi” tarapyndan jogapkär edip bellenendigi barada içki buýrugyň göçürmesi (wezipesini, ykjam telefon belgisini, elektron poçta salgysyny görkezmeli); 4) “Müşderiniň” Tertipnamasynyň (Düzgünnamasynyň) göçürmesi; 5) Türkmenistanyň Edara görnüşli talaplaryň ýeke-täk döwlet sanawyndan göçürmesi; 6) Şahadatnamanyň göçürmesi (Türkmenistanyň Maliýe we ykdysadyýet ministrligi tarapyndan berilen). Fiziki şahslar üçin (telekeçi): 1) ýüz tutma haty; 2) “Müşderi” tarapyndan bellenen administratoryň pasport nusgasy we şahsy maglumaty; 3) Hususy telekeçiniň bellige alyş şahadatnamasynyň göçürmesi.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div> <!-- End Faq item-->
+
+              <div class="faq-item">
+                <h3><span class="num">2.</span> <span>VPS/VDS -dan name tapawudy bar?</span></h3>
+                <div class="faq-content">
+                  <p>VPS (Virtual Private Server) ýa-da VDS (Virtual Dedicated Server) “berlen wirtual serwer” diýmekligi aňladýar. VPS VDS-dan näme tapawudy bar diýseň, hakykatda hiç tapawudy ýok, ýöne wirtuallaşdyrma tehnologiýasynda giňişleýin tapawudy ýüze çykýar(mysal üçin, OpenVZ we KVM).</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div> <!-- End Faq item -->
+
+              <div class="faq-item mb-5">
+                <h3><span class="num">3.</span> <span>OVZ we KVM tehnologiýalary näme we nähili tapawutlanýarlar?</span></h3>
+                <div class="faq-content">
+                  <p>OpenVZ (Open Virtuozzo) – Linux ýadrosyna esaslanýan konteýnerleme platformasydyr. Linux ulgamyna esaslanýan bir operasiýa ulgamynda birnäçe operasiýa ulgamyny işletmäge mümkinçilik berýär. Konteýnerler root ygtyýarlylygy, faýl, ulanyjy ýa-da topar, amal we tor izolýasiýasy bilen garaşsyz Linux ulgamy hökmünde işleýär. OpenVZ konteýnerlerine belli bir mukdarda RAM, prosessor ýadrosy we gaty disk giňişligi bölünip berilýär we wirtual Linux serwerleri hökmünde üpjün edilýär. CPU-nyň we ýat çeşmeleriniň käbir bölegi konteýnerlere bölünýär, ýagny konteýner özüne bölünen zatlardan başga-da has köp çeşmä mätäç bolsa, beýleki gaplaryň ulanylmadyk çeşmelerinden wagtlaýynça alyp biler. Konteýnerizasiýa wagtynda ýadro ähli konteýnerler üçin umumy bolansoň, ýadro sazlamalaryny üýtgetmek, täzelemek ýa-da goşmaça ýadro modullaryny ulanmak mümkin däl. Şeýlelik bilen, täzelenmeler arkaly ulgamyň işleýşini we ýadrosynyň mümkinçiliklerini gowulaşdyryp bilmeýärsiňiz. Şeýlelik bilen sizde öňki Linux distributiwyňyz galar. KVM (Kernel-based Virtual Machine) — host-maşynda fiziki serweriň absolýut wirtual analogyny döretmäge mümkinçilik berýän apparat wirtuallaşdyryş tehnologiýasy. Müşderi çäklendirmesiz şahsy zerurlyklar üçin OS-ny uýgunlaşdyryp we üýtgedip biler. Islendik operasiýa ulgamyny gurmaga rugsat berilýär.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item">
+                <h3><span class="num">4.</span> <span>Müşderi wirtual maşyn OS-ny özbaşdak üýtgedip bilýärmi?</span></h3>
+                <div class="faq-content">
+                  <p>OpenVZ we KVM tehnologiýalaryny (VDS A, VDS B, VDS C) goldaýan nyrhnamalary ulanýan bolsaňyz, wirtual maşynyň OS-ny özbaşdak üýtgedip bilersiňiz. Hyzmaty açanyňyzda rekwizitleri e-poçta salgyňyza iberilýär. Rekwizitda vmmanager-a geçmek üçin salgylanmany ulanyp bilersiňiz. Wirtual maşynyň OS-ny täzeden gurmak Dolandyryş -> Wirtual maşynlar -> Gaýtadan gurnamak bölüminde başladylýar.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item">
+                <h3><span class="num">5.</span> <span>Ilat üçin internetini nädip birikdirmeli?</span></h3>
+                <div class="faq-content">
+                  <p>Ilat üçin internetini birikdirmek üçin Daşoguztelekomyň islendik hyzmat ofisine ýüz tutup bilersiňiz.
+                    <br>
+                    1) Öý telefon belginiň eýesi, pasporty we pasportynyň göçürmesi;
+                    
+                    2) Öý kitapçasy;
+                    
+                    3) Hususy eýeçilik şahadatnamasy
+                    
+                    Has giňişleýin maglumat üçin 071 jaň merkezimize ýüz tutup bilersiňiz.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- End Faq Section -->
+
+
+        </div>
+
+      </div>
+
+    </section><!-- End Team Section -->
+
+<!-- -================================================================= -->
+
+    <!-- -================================================================= -->
+
+
+    <!-- Testimonials Section - Home Page -->
+    <section id="habar" class="testimonials">
+
+      <div class="container">
+
+        <div class="row align-items-center">
+
+          <div class="col-lg-5 info" data-aos="fade-up" data-aos-delay="100">
+            <h3>Habarlaşmak üçin</h3>
+            <p>
+              Bu ýerde, sebitlerimizde ýerleşýän filiallarmyz bilen habarlaşmak üçin gerekli salgylary tapyp bilersiňiz.
+            </p>
+          </div>
+
+          <div class="col-lg-7" data-aos="fade-up" data-aos-delay="200">
+
+            <div class="swiper">
+              <template class="swiper-config">
+                {
+                "loop": true,
+                "speed" : 600,
+                "autoplay": {
+                "delay": 5000
+                },
+                "slidesPerView": "auto",
+                "pagination": {
+                "el": ".swiper-pagination",
+                "type": "bullets",
+                "clickable": true
+                }
+                }
+              </template>
+              <div class="swiper-wrapper">
+
+                <div class="swiper-slide">
+                  <div class="testimonial-item">
+                    <div class="d-flex">
+                      <div class="p-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                          <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10"/>
+                          <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
+                        </svg>
+                      </div>
+                      <div>
+                        <h3>Aşgabat</h3>
+                        <h4>Aşgabat, 1916 köç. Jaý 39B</h4>
+                        <div class="pt-2">
+                          <i>Aragatnaşyk bölümi</i>
+                        </div>
+                      </div>
+                    </div>
+                    <p>
+                      <i class="bi bi-quote quote-icon-left"></i>
+                      <span>Aşgabat şäheri üçin ýokary hilli hyzmatlar we maglumatlar, ulanyjylaryň amatlylygy üçin möhüm çeşmelere elýeterlilik üpjün edýäris.</span>
+                      <i class="bi bi-quote quote-icon-right"></i>
+                    </p>
+                  </div>
+                </div><!-- End testimonial item -->
+
+                <div class="swiper-slide">
+                  <div class="testimonial-item">
+                    <div class="d-flex">
+                      <div class="p-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                          <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10"/>
+                          <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
+                        </svg>
+                      </div>
+                      <div>
+                        <h3>Ahal</h3>
+                        <h4>Ak bugdaý, Watan köç. j. 6</h4>
+                        <div class="pt-2">
+                          <i>Internet hyzmatlaryny bermek we müşderiler bilen işlemek bölümi</i>
+                        </div>
+                      </div>
+                    </div>
+                    <p>
+                      <i class="bi bi-quote quote-icon-left"></i>
+                      <span>Ahal welaýaty üçin ýokary hilli hyzmatlar we maglumatlar, ulanyjylaryň amatlylygy üçin möhüm çeşmelere elýeterlilik üpjün edýäris.</span>
+                      <i class="bi bi-quote quote-icon-right"></i>
+                    </p>
+                  </div>
+                </div><!-- End testimonial item -->
+
+                <div class="swiper-slide">
+                  <div class="testimonial-item">
+                    <div class="d-flex">
+                      <div class="p-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                          <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10"/>
+                          <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
+                        </svg>
+                      </div>
+                      <div>
+                        <h3>Balkan</h3>
+                        <h4>Balkanabat, Balkanabat şäheri kw 195 Internet kafe</h4>
+                        <div class="pt-2">
+                          <i>Internet hyzmatlaryny bermek we müşderiler bilen işlemek bölümi</i>
+                        </div>
+                      </div>
+                    </div>
+                    <p>
+                      <i class="bi bi-quote quote-icon-left"></i>
+                      <span>Balkan welaýaty üçin ýokary hilli hyzmatlar we maglumatlar, ulanyjylaryň amatlylygy üçin möhüm çeşmelere elýeterlilik üpjün edýäris.</span>
+                      <i class="bi bi-quote quote-icon-right"></i>
+                    </p>
+                  </div>
+                </div><!-- End testimonial item -->
+
+                <div class="swiper-slide">
+                  <div class="testimonial-item">
+                    <div class="d-flex">
+                      <div class="p-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                          <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10"/>
+                          <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
+                        </svg>
+                      </div>
+                      <div>
+                        <h3>Lebap</h3>
+                        <h4>Kerki, S.A.Nyýazow köçesi, 62-nji jaý</h4>
+                        <div class="pt-2">
+                          <i>Aragatnaşyk bölümi</i>
+                        </div>
+                      </div>
+                    </div>
+                    <p>
+                      <i class="bi bi-quote quote-icon-left"></i>
+                      <span>Lebap welaýaty üçin ýokary hilli hyzmatlar we maglumatlar, ulanyjylaryň amatlylygy üçin möhüm çeşmelere elýeterlilik üpjün edýäris.</span>
+                      <i class="bi bi-quote quote-icon-right"></i>
+                    </p>
+                  </div>
+                </div><!-- End testimonial item -->
+
+                <div class="swiper-slide">
+                  <div class="testimonial-item">
+                    <div class="d-flex">
+                      <div class="p-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                          <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10"/>
+                          <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
+                        </svg>
+                      </div>
+                      <div>
+                        <h3>Mary</h3>
+                        <h4>Mary, Mollanepes kelte köçesi j. 12 </h4>
+                        <div class="pt-2">
+                          <i>Internet hyzmatlaryny bermek we müşderiler bilen işlemek bölümi</i>
+                        </div>
+                      </div>
+                    </div>
+                    <p>
+                      <i class="bi bi-quote quote-icon-left"></i>
+                      <span>Mary welaýaty üçin ýokary hilli hyzmatlar we maglumatlar, ulanyjylaryň amatlylygy üçin möhüm çeşmelere elýeterlilik üpjün edýäris.</span>
+                      <i class="bi bi-quote quote-icon-right"></i>
+                    </p>
+                  </div>
+                </div><!-- End testimonial item -->
+
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- End Testimonials Section -->
+
+    <!-- Recent-posts Section - Home Page -->
+    <section id="recent-posts" class="recent-posts">
+
+      <!--  Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Täzelikler</h2>
+        <p>Täze we möhüm maglumatlar, soňky habarlar we wakalar bilen güncel tazelikler.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4">
+          {% for new in news %}
+          <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <article>
+
+              <div class="post-img">
+                <img src="/media/{{ new.image }}" alt="" class="img-fluid">
+              </div>
+
+              <p class="post-category">{{ new.created_at|date:"d.m.Y" }}</p>
+
+              <h3 class="title pt-2">
+                <a href="news/{{ new.id }}/">{{ new.title }}</a>
+              </h3>
+
+            </article>
+          </div>
+          {% endfor %}<!-- End post list item -->
+
+        </div><!-- End recent posts list -->
+
+      </div>
+
+    </section><!-- End Recent-posts Section -->
+
+    <!-- Contact Section - Home Page -->
+    <section id="contact" class="contact">
+
+      <!--  Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Habarlaşmak</h2>
+        <p>Biz bilen habarlaşmak üçin maglumatlary ulanyň, soraglaryňyza jogap bermäge hemişe taýýar!
+        </p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-6">
+
+            <div class="row gy-4">
+              <div class="col-md-6">
+                <div class="info-item" data-aos="fade" data-aos-delay="200">
+                  <i class="bi bi-geo-alt"></i>
+                  <h3>Salgysy</h3>
+                  <p>Daşoguz, Türkmenbaşy şaýoly j. 44</p>
+                  <!-- <p>Türkmenbaşy, Türkmenbaşy şaýoly j. 6</p> -->
+                </div>
+              </div><!-- End Info Item -->
+
+              <div class="col-md-6">
+                <div class="info-item" data-aos="fade" data-aos-delay="300">
+                  <i class="bi bi-telephone"></i>
+                  <h3>Bize jaň et</h3>
+                  <p><a class="text-black" href="tel:499401">499401</a>,<a class="text-black" href="tel:499402">499402</a></p>
+                  <p><a class="text-black" href="tel:499403">499403</a></p>
+                </div>
+              </div><!-- End Info Item -->
+
+              <div class="col-md-6">
+                <div class="info-item" data-aos="fade" data-aos-delay="400">
+                  <i class="bi bi-envelope"></i>
+                  <h3>Bize email ýazyň</h3>
+                  <p>info@telecom.tm</p>
+                  <p>info@telecom.tm</p>
+                </div>
+              </div><!-- End Info Item -->
+
+              <div class="col-md-6">
+                <div class="info-item" data-aos="fade" data-aos-delay="500">
+                  <i class="bi bi-clock"></i>
+                  <h3>Iş wagty</h3>
+                  <p>Duşenbe - Anna</p>
+                  <p>9:00AM - 18:00PM</p>
+                </div>
+              </div><!-- End Info Item -->
+
+            </div>
+
+          </div>
+
+          <div class="col-lg-6">
+            <form action="{% url 'contact' %}" method="post" class="dd-email-form" data-aos="fade-up" data-aos-delay="200">
+              {% csrf_token %}
+              <div class="row gy-4">
+
+                <div class="col-md-6">
+                  <input type="text" name="name" class="form-control" placeholder="Ulanyjy ady" required>
+                </div>
+
+                <div class="col-md-6 ">
+                  <input type="email" class="form-control" name="email" placeholder="Email giriziň" required>
+                </div>
+
+                <div class="col-md-12"> 
+                  <input type="text" class="form-control" name="subject" placeholder="Tema" required>
+                </div>
+
+                <div class="col-md-12">
+                  <textarea class="form-control" name="message" rows="6" placeholder="Masaj" required></textarea>
+                </div>
+
+                <div class="col-md-12 text-center">
+                  <div class="sent-message">Your message has been sent. Thank you!</div>
+                  <!-- <div class="alert alert-success" role="alert">
+                    A simple success alert—check it out!
+                  </div> -->
+
+                  <button type="submit">Habary ugrat</button>
+                </div>
+
+              </div>
+            </form>
+          </div><!-- End Contact Form -->
+
+        </div>
+
+      </div>
+
+    </section><!-- End Contact Section -->
+{% endblock body %}
+{% block scripts %}
+<script src="{% static 'assets/js/main.js' %}"></script>
+{% endblock scripts %}

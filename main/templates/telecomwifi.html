@@ -1,0 +1,114 @@
+{% extends 'main_layout.html' %}
+{% load static %}
+{% block title %}
+Jemgyýetçilik ýerlerinde TELECOMWIFI - Daşoguztelecom
+{% endblock title %}
+{% block head %}
+    <link href="{% static 'assets/css/main.css' %}" rel="stylesheet">
+    <link href="{% static 'assets/css/new.css' %}" rel="stylesheet">
+    <link href="{% static 'assets/css/wifi.css' %}" rel="stylesheet">
+    <link rel="stylesheet"
+          href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css' %}">
+{% endblock head %}
+{% block body %}
+    <div style="height: 15vh;"></div>
+    <header class="bg-wgreen text-white text-center p-3">
+        <h1>TelecomWiFi - Daşoguztelecom</h1>
+    </header>
+    <div class="container box-shadow">
+        <h2>TELECOMWIFIÜŇ BEKLENIKSIZ TARIFLERI</h2>
+        <div class="table-wrapper">
+            <h3>Aşgabadyň köpçülk orunlarynda</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Ulanyş wagty</th>
+                        <th>Baha</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1 sagat</td>
+                        <td>5 manat</td>
+                    </tr>
+                    <tr>
+                        <td>3 sagat</td>
+                        <td>10 manat</td>
+                    </tr>
+                    <tr>
+                        <td>1 gün</td>
+                        <td>15 manat</td>
+                    </tr>
+                    <tr>
+                        <td>7 gün</td>
+                        <td>50 manat</td>
+                    </tr>
+                    <tr>
+                        <td>1 aý</td>
+                        <td>150 manat</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="table-wrapper">
+            <h3>Aşgabadyň halkara howa menzilinde</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Ulanyş wagty</th>
+                        <th>Baha</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1 sagat</td>
+                        <td>5 USD</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="table-wrapper">
+            <h3>Sagaldyş merkezleri üçin</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Ulanyş wagty</th>
+                        <th>Baha</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>10 gün</td>
+                        <td>30 manat</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="table-wrapper">
+            <h3>Däliňeli raýatlar üçin</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Ulanyş wagty</th>
+                        <th>Baha</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1 gün</td>
+                        <td>20 USD</td>
+                    </tr>
+                    <tr>
+                        <td>7 gün</td>
+                        <td>100 USD</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div style="height: 5vh;"></div>
+{% endblock body %}
+{% block scripts %}
+    <script src="{% static 'assets/js/main.js' %}"></script>
+    <script src="{% static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+{% endblock scripts %}

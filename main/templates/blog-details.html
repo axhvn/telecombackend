@@ -1,0 +1,118 @@
+{% extends 'main_layout.html' %}
+{% load static %}
+{% block title %}
+Blog Details
+{% endblock title %}
+{% block head %}
+<link href="{% static 'assets/css/main.css' %}" rel="stylesheet">
+<link href="{% static 'assets/css/new.css' %}" rel="stylesheet">
+{% endblock head %}
+{% block body %}
+
+    <!-- Blog Details Page Title & Breadcrumbs -->
+    <div style="height: 15vh;"></div>
+
+    <div data-aos="fade" class="page-title">
+      <div class="heading">
+        <div class="container">
+          <div class="row d-flex justify-content-center text-center">
+            <div class="col-lg-8">
+              <h1>Täzelik maglumatlary</h1>
+              <p class="mb-0">Daşoguztelecom kompaniýasynyň iň soňky täzelikleri, hyzmatlary, tehnologiýa ösüşleri we müşderilere degişli möhüm habarlar bilen tanyşdyrýar. Biziň bilen habarlaşyň!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <nav class="breadcrumbs">
+        <div class="container">
+          <ol>
+            <li><a href="{% url 'home' %}">Home</a></li>
+            <li class="current">Täzelik maglumatlary</li>
+          </ol>
+        </div>
+      </nav>
+    </div><!-- End Page Title -->
+
+    <!-- Blog-details Section - Blog Details Page -->
+    <section id="blog-details" class="blog-details">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row g-5">
+
+          <div class="col-lg-8">
+
+            <article class="article">
+
+              <div class="post-img">
+                <img src="/media/{{ blog.image }}" alt="" class="img-fluid">
+              </div>
+
+              <h2 class="title">{{ blog.title }}</h2>
+
+              <div class="meta-top">
+                <ul>
+                  <li class="d-flex align-items-center"><i class="bi bi-person"></i> <a href="/blog-details/{{ blog.id }}/">{{ blog.publisher }}</a></li>
+                  <li class="d-flex align-items-center"><i class="bi bi-clock"></i> <a href="/blog-details/{{ blog.id }}/"><div>{{ blog.created_at|date:"d.m.Y" }}</div></a></li>
+                </ul>
+              </div><!-- End meta top -->
+
+              <div class="content">
+                
+                <p>
+                  {{ blog.content|safe }}
+                </p>
+
+              </div><!-- End post content -->
+
+              <div class="meta-bottom">
+                <i class="bi bi-folder"></i>
+                <ul class="cats">
+                  <li><a href="#">Business</a></li>
+                </ul>
+
+                <i class="bi bi-tags"></i>
+                <ul class="tags">
+                  <li><a href="#">Creative</a></li>
+                  <li><a href="#">Tips</a></li>
+                  <li><a href="#">Marketing</a></li>
+                </ul>
+              </div><!-- End meta bottom -->
+
+            </article><!-- End post article -->
+
+          </div>
+
+          <div class="col-lg-4">
+
+            <div class="sidebar">
+              <div class="sidebar-item recent-posts">
+                <h3 class="sidebar-title">Recent Posts</h3>
+                {% for blog_obj in blogs %}
+                  {% if blog_obj != blog %}
+                <div class="post-item">
+                    <img src="/media/{{ blog_obj.image }}" alt="" class="flex-shrink-0">
+                    <div>
+                      <h4><a href="/blog-details/{{ blog_obj.id }}/">{{ blog_obj.name }}</a></h4>
+                      <div>{{ blog.created_at|date:"d.m.Y" }}</div>
+                    </div>
+                  </div><!-- End recent post item-->
+                  {% endif %}
+                {% endfor %}
+                
+              </div><!-- End sidebar recent posts-->
+
+            </div><!-- End Sidebar -->
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- End Blog-details Section -->
+
+    {% endblock body %}
+    {% block scripts %}
+    <script src="{% static 'assets/js/main.js' %}"></script>
+    {% endblock scripts %}
